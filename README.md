@@ -43,15 +43,15 @@ Functionalities:
 ### Installation
 1. Clone this repository into your ROS2 workspace/src directory.
  ```
-  https://github.com/LAIR-Lab/mp_ros2.git
+  cd src/ && git clone https://github.com/LAIR-Lab/mp_ros2.git
   ``` 
 2. Run colcon_build from your ROS2 workspace directory.
 <!-- USAGE EXAMPLES -->
 ## Usage
 From another bash:
   ```sh
-  source ros2_workspace/install/setup.bash
-  ros2 run media_pipe_ros2 hands_detector
+  source ros2_ws/install/setup.bash
+  ros2 run mp_ros2 hands_detector_rs
   ```
 <!-- CONTACT -->
 ## Contact
