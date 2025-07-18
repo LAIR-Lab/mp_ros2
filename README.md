@@ -28,11 +28,14 @@ Functionalities:
 * Python3
 * OpenCV
     ```sh
+  python3 -m venv user_venvs/opencv && source user_venvs/opencv/bin/activate
+    ```
+    ```sh
   pip install opencv-python
-  ```
+    ```
 * Media Pipe
   ```sh
-  python3 -m venv mp_env && source mp_env/bin/activate
+  python3 -m venv user_venvs/mediapipe && source user_venvs/mediapipe/bin/activate
   ```
   ```sh
   pip install mediapipe
@@ -40,7 +43,7 @@ Functionalities:
 ### Installation
 1. Clone this repository into your ROS2 workspace/src directory.
  ```
-  git clone https://github.com/dmartinelli1997/media_pipe_ros2
+  https://github.com/LAIR-Lab/mp_ros2.git
   ``` 
 2. Run colcon_build from your ROS2 workspace directory.
 <!-- USAGE EXAMPLES -->
