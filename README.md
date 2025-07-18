@@ -48,7 +48,7 @@ Functionalities:
 From another bash:
   ```sh
   source ros2_workspace/install/setup.bash
-  ros2 run media_ṕipe_ros2 hands_detector
+  ros2 run media_pipe_ros2 hands_detector
   ```
 <!-- CONTACT -->
 ## Contact
