@@ -68,7 +68,7 @@ colcon build # Optional: --packages-select media_pipe_ros2 media_pipe_ros2_msg r
 source install/setup.bash
 ros2 launch mp.launch.py
 ```
-Can be launched with the following toggleable parameters. : <br>
+Can be launched with the following toggleable parameters: <br>
 | Parameter | True (Default) | False |
 |----------|----------|----------|
 | face_on:=   | Detects face | Does not detect face |
