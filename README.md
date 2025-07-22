@@ -61,6 +61,21 @@ From another bash:
   source ros2_ws/install/setup.bash
   ros2 run mp_ros2 hands_detector_rs
   ```
+```
+cd
+cd ros2_ws/
+colcon build # Optional: --packages-select media_pipe_ros2 media_pipe_ros2_msg realsense-ros
+source install/setup.bash
+ros2 launch mp.launch.py
+```
+Can be launched with the following toggleable parameters. : <br>
+| Parameter | True (Default) | False |
+|----------|----------|----------|
+| face_on:=   | Detects face | Does not detect face |
+| pose_on:=  | Detects pose | Does not detect pose |
+| hands_on:=  | Detects hands | Does not detect hands |
+| open_window:=  | Opens separate video window for visualization | Does not open window |
+
 <!-- CONTACT -->
 ## Contact
 
