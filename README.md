@@ -26,7 +26,7 @@ Functionalities:
 
 ### Prerequisites
 * Python3
-* Intel Realsense SDK abd ROS Wrapper for Intel RealSense cameras <br>
+* Intel Realsense SDK and ROS Wrapper for Intel RealSense cameras <br>
   Follow the instructions found here, installing from Linux Debian Installation Guide:
   https://github.com/IntelRealSense/realsense-ros?tab=readme-ov-file <br>
   Note that at the time of writing, this SDK is not compatible with Jammy Jellyfish 6.8 or 6.14 kernels. So following the steps to install with the DKMS kernal module is not necessary. Commands that reference dpkg in sections will return errors though. This should not affect overall functionality. <br>
