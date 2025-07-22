@@ -28,12 +28,13 @@ setup(
             'face_mesh_detector = media_pipe_ros2.face_mesh_detector:main',
             'holistic_detector = media_pipe_ros2.holistic_detector:main',
 
-            'hands_detector_rs = media_pipe_ros2.hands_detector_rs:main',
-            'pose_detector_rs = media_pipe_ros2.pose_detector_rs:main',
-            'face_mesh_detector_rs = media_pipe_ros2.face_mesh_detector_rs:main',
-            'holistic_detector_rs = media_pipe_ros2.holistic_detector_rs:main',
+            # Note that these executabkesare located within subdirectories in media_pipe_ros2 and require path specification as shown.
+            'hands_detector_rs = media_pipe_ros2.rs.hands_detector_rs:main',
+            'pose_detector_rs = media_pipe_ros2.rs.pose_detector_rs:main',
+            'face_mesh_detector_rs = media_pipe_ros2.rs.face_mesh_detector_rs:main',
+            'holistic_detector_rs = media_pipe_ros2.rs.holistic_detector_rs:main',
 
-            'visualization = media_pipe_ros2.visualization:main',
+            'visualization = media_pipe_ros2.visualization.visualization:main',
         ],
     },
 )
