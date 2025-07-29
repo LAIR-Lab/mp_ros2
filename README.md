@@ -28,7 +28,10 @@ Functionalities:
 * Python3
 * Intel Realsense SDK and ROS Wrapper for Intel RealSense cameras <br>
   Follow the instructions found here, installing from Linux Debian Installation Guide: https://github.com/IntelRealSense/realsense-ros?tab=readme-ov-file <br>
-  At the time of writing, this SDK is not compatible with Noble Numbat 24.04.04 LTS 6.14 kernel (https://github.com/IntelRealSense/librealsense/releases). Reboot with a compatible kernel: Advanced > 6.08 (non-recovery mode)) <br>
+  At the time of writing, this SDK is not compatible with Noble Numbat 24.04.04 LTS 6.14 kernel (https://github.com/IntelRealSense/librealsense/releases). <br>
+  Check your system current kernel and available kernels with: <br>
+  ```uname -r && dpkg --list | grep linux-image```
+  <br>Reboot with a compatible kernel: Advanced > 6.08 (non-recovery mode)) <br>
   ```bash
   uname -r # Confirm your kernel
   # librealsense2-dkms
@@ -37,11 +40,11 @@ Functionalities:
   sudo dkms install -m librealsense2-dkms -v "$version" -k 6.8.0-41-generic # And install
   ```
   <br>
-  ```sudo apt install librealsense2-utils``` will return an error as it is not a kernel module and cannot be selectively installed to one compatible kernel. It still successfully installs to the correct kernel though, and shouldn't raise further errors.
+  The following returns an error as it is not a kernel module and cannot be selectively installed to one compatible kernel. It still successfully installs to the correct kernel though, and shouldn't raise further errors.
   <br>
-  Check your system current kernel and available kernels with: <br>
-  ```uname -r && dpkg --list | grep linux-image``` <br>
-  (Note: After this step: ```sudo apt-get install librealsense2-dkms```, the "Configuring Secure Boot" menu may appear. This requires you to set a Machine Owner Key (MOK))
+  ```sudo apt install librealsense2-utils```
+  <br>
+  Note: After this step: ```sudo apt-get install librealsense2-dkms```, the "Configuring Secure Boot" menu may appear. This requires you to set a Machine Owner Key (MOK)
     
 * OpenCV
     ```sh
