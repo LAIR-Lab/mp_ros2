@@ -41,10 +41,10 @@ Functionalities:
   ```
   <br>
   The following returns an error as it is not a kernel module and cannot be selectively installed to one compatible kernel. It still successfully installs to the correct kernel though, and shouldn't raise further errors.
-  <br>
+  
   ```sudo apt install librealsense2-utils```
-  <br>
-  Note: After this step: ```sudo apt-get install librealsense2-dkms```, the "Configuring Secure Boot" menu may appear. This requires you to set a Machine Owner Key (MOK)
+  
+  Note: After this step: ```sudo apt-get install librealsense2-dkms```, the "Configuring Secure Boot" menu may appear. This requires you to set a Machine Owner Key (MOK).
     
 * OpenCV
     ```sh
