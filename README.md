@@ -39,7 +39,6 @@ Functionalities:
   sudo dkms build -m librealsense2-dkms -v "$version" -k 6.8.0-41-generic # Selectively build this version of librealsense2-dkms to this kernel
   sudo dkms install -m librealsense2-dkms -v "$version" -k 6.8.0-41-generic # And install
   ```
-  <br>
   The following returns an error as it is not a kernel module and cannot be selectively installed to one compatible kernel. It still successfully installs to the correct kernel though, and shouldn't raise further errors.
   
   ```sudo apt install librealsense2-utils```
