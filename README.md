@@ -46,17 +46,11 @@ Functionalities:
   Note: After this step: ```sudo apt-get install librealsense2-dkms```, the "Configuring Secure Boot" menu may appear. This requires you to set a Machine Owner Key (MOK).
     
 * OpenCV
-    ```sh
-  python3 -m venv user_venvs/opencv && source user_venvs/opencv/bin/activate
-    ```
-    ```sh
-  pip install opencv-python
-    ```
-* Media Pipe
-  ```sh
-  python3 -m venv user_venvs/mediapipe && source user_venvs/mediapipe/bin/activate
+    ```python3 -m venv user_venvs && source user_venvs/bin/activate```
+    ```pip install opencv-python```
+* Media Pipe (with the venv still activated)
   ```
-  ```sh
+  # python3 -m venv user_venvs # && source user_venvs/bin/activate
   pip install mediapipe
   ```
 ### Installation
