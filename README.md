@@ -62,10 +62,8 @@ Functionalities:
   ```
 ### Installation
 1. Clone this repository into your ROS2 workspace/src directory.
- ```
-  cd src/ && git clone https://github.com/LAIR-Lab/mp_ros2.git
-  ``` 
-2. Run colcon_build from your ROS2 workspace directory.
+   ```cd src/ && git clone https://github.com/LAIR-Lab/mp_ros2.git``` 
+3. Run colcon_build from your ROS2 workspace directory.
 <!-- USAGE EXAMPLES -->
 ## Usage
 From another bash:
