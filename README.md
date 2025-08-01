@@ -74,8 +74,7 @@ From another bash:
   ros2 run mp_ros2 hands_detector_rs
   ```
 ```
-cd
-cd ros2_ws/
+cd ~/ros2_ws/
 colcon build # Optional: --packages-select media_pipe_ros2 media_pipe_ros2_msg realsense-ros
 source install/setup.bash
 ros2 launch mp.launch.py
