@@ -31,7 +31,7 @@ Functionalities:
   At the time of writing, this SDK is not compatible with Noble Numbat 24.04.04 LTS 6.14 kernel (https://github.com/IntelRealSense/librealsense/releases). <br>
   Check your system current kernel and available kernels with: <br>
   ```uname -r && dpkg --list | grep linux-image```
-  <br>Reboot with a compatible kernel: Advanced > 6.08 (non-recovery mode)) <br>
+  Reboot with a compatible kernel: Advanced > 6.08 (non-recovery mode)) <br>
   ```bash
   uname -r # Confirm your kernel
   # librealsense2-dkms
@@ -40,22 +40,40 @@ Functionalities:
   sudo dkms install -m librealsense2-dkms -v "$version" -k 6.8.0-41-generic # And install
   ```
   The following returns an error as it is not a kernel module and cannot be selectively installed to one compatible kernel. It still successfully installs to the correct kernel though, and shouldn't raise further errors.
-  
-  ```sudo apt install librealsense2-utils```
+  ```bash
+  sudo apt install librealsense2-utils
+  ```
   
   Note: After this step: ```sudo apt-get install librealsense2-dkms```, the "Configuring Secure Boot" menu may appear. This requires you to set a Machine Owner Key (MOK).
     
 * OpenCV
-    ```python3 -m venv user_venvs && source user_venvs/bin/activate```
-    ```pip install opencv-python```
-* Media Pipe (with the venv still activated)
+  ```bash
+  python3 -m venv user_venvs && source user_venvs/bin/activate # Activate the venv
+  pip install opencv-python
   ```
-  # python3 -m venv user_venvs # && source user_venvs/bin/activate
+  
+* MediaPipe (with the venv still activated)
+  ```bash
   pip install mediapipe
   ```
+  
+* NumPy (with the venv still activated)
+  At the time of writing, the MediaPipe package is not compatible with NumPy more recent than 2. Therefore, ensure a comptable version of NumPy is installed in the venv 1.26.4 
+  ```bash
+  pip install 'numpy<2'
+  ```
+* Sourcing and Path Configuration (with the venv still activated)
+  Ensure you source ROS after activating the venv to expose the packages
+  ```bash
+  source /opt/ros/jazzy/setup.bash
+  source ~/ros2_ws/install/setup.bash
+
+  export PYTHONPATH=$HOME/venv/lib/python3.12/site-packages:$PYTHONPATH # Use PYTHONPATH to expose venv packages to ROS2
+  # python3 -c "import sys;print('\n'.join(sys.path))" # Check the export worked
+  ```
+  
 ### Installation
 1. Clone this repository into your ROS2 workspace/src directory.
-
    ```cd src/ && git clone https://github.com/LAIR-Lab/mp_ros2.git``` 
 3. Run colcon_build from your ROS2 workspace directory.
 <!-- USAGE EXAMPLES -->
