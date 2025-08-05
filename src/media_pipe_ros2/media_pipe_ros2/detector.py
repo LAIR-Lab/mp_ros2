@@ -1,3 +1,13 @@
+#!/home/lairlab-squirtle/venv/bin/python3
+
+import os
+# Logging and debugging
+import rclpy.logging 
+filename = os.path.basename(__file__)
+logger = rclpy.logging.get_logger(f"{filename} logger")
+logger.info(f"{logger.name} is working.")
+import sys; logger.info(f"{filename} Python Executable: {sys.executable}")
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -82,6 +92,7 @@ class HolisticPublisher(Node):
 		color_image = self.bridge.imgmsg_to_cv2(color_msg, desired_encoding='bgr8') # converted from rgb8
 		depth_image = self.bridge.imgmsg_to_cv2(depth_msg, desired_encoding='passthrough') # same as original, 16UC1
 		color_image = cv2.flip(color_image, 1)  # mirror horizontally for cv
+		height, width, _ = color_image.shape
 
 		image_rgb = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB) # Make a copy in RGB for MediaPipe processing
 		image_rgb.flags.writeable = False
@@ -127,23 +138,7 @@ class HolisticPublisher(Node):
 					side = 'right_hand_key_points' if handedness.classification[0].label == "Right" else 'left_hand_key_points'
 					for i, point in enumerate(mp_hands.HandLandmark):
 						lm = hand_landmarks.landmark[point]
-						
-						# Convert normalized coordinates to pixels
-						height, width, _ = color_image.shape
-						px = int(lm.x * width)
-						py = int(lm.y * height)
-						px = max(0, min(px, width - 1))
-						py = max(0,min(py, height - 1))
-						
-						# Get absolute depths
-						depth_mm = depth_image[py,px]
-						depth_m = depth_mm / 1000.0 if depth_mm > 0 else float('nan')
-						
-						# Get attributes
-						getattr(human_hand, side)[i].name = str(point)
-						getattr(human_hand, side)[i].x = lm.x
-						getattr(human_hand, side)[i].y = lm.y
-						getattr(human_hand, side)[i].z = depth_m
+						self.normalize_absolutize(human_hand, lm, side, i, point, width, height, depth_image)
 
 					mp_drawing.draw_landmarks(
 						color_image, 
@@ -165,9 +160,29 @@ class HolisticPublisher(Node):
 
 		# Display
 		if self.open_window:
+			self.get_logger().info("Displaying Image")
 			cv2.imshow('MediaPipe Holistic', color_image)  # display BGR
 		if cv2.waitKey(5) & 0xFF == 27:
 			cv2.destroyAllWindows()
+
+	def normalize_absolutize(self, feature, landmark, side, i, point, width, height, depth_image):
+		# Convert normalized coordinates to pixel coordinates
+		px = int((1.0 - landmark.x) * width) # flip it back on the horizontal
+		py = int(landmark.y * height)
+
+		# Normalize
+		px = max(0, min(px,width - 1))
+		py = int(landmark.y * height)
+
+		# Get absolute depths
+		depth_mm = depth_image[py,px]
+		depth_m = depth_mm / 1000
+
+		# Get attributes
+		getattr(feature, side)[i].name = str(point)
+		getattr(feature, side)[i].x = landmark.x
+		getattr(feature, side)[i].y = landmark.y
+		getattr(feature, side)[i].z = depth_m
 
 def main(args=None):
 	rclpy.init(args=args)

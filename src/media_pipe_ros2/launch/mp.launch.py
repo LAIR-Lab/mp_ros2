@@ -1,10 +1,20 @@
+#!/home/lairlab-squirtle/venv/bin/python3
+
+import os
+# Logging and debugging
+import rclpy.logging 
+filename = os.path.basename(__file__)
+logger = rclpy.logging.get_logger(f"{filename} logger")
+logger.info(f"{logger.name} is working.")
+import sys; logger.info(f"{filename} Python Executable: {sys.executable}")
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, LogInfo, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
-import os
+
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
@@ -67,8 +77,8 @@ def generate_launch_description():
 		# MediaPipe
 	holistic_detector_rs = Node(
 		package='media_pipe_ros2',
-		executable='holistic_detector_rs',
-		name='detector_rs',
+		executable='detector',
+		name='detector',
 		output='screen',
 		parameters=[{
 			'pose_on': pose_on,
