@@ -160,7 +160,10 @@ class HolisticPublisher(Node):
 
 		# Display
 		if self.open_window:
-			self.get_logger().info("Displaying Image")
+			_logged_displaying = False # Initial value
+			if not hasattr(self, "_logged_displaying"): # Log msg has not been logged yet
+				self.get_logger().info("Displaying Image")
+				self._logged_displaying = True
 			cv2.imshow('MediaPipe Holistic', color_image)  # display BGR
 		if cv2.waitKey(5) & 0xFF == 27:
 			cv2.destroyAllWindows()
@@ -172,10 +175,10 @@ class HolisticPublisher(Node):
 
 		# Normalize
 		px = max(0, min(px,width - 1))
-		py = int(landmark.y * height)
+		py = max(0, min(py, height - 1))
 
 		# Get absolute depths
-		depth_mm = depth_image[py,px]
+		depth_mm = depth_image[py, px]
 		depth_m = depth_mm / 1000
 
 		# Get attributes
@@ -187,9 +190,13 @@ class HolisticPublisher(Node):
 def main(args=None):
 	rclpy.init(args=args)
 	node = HolisticPublisher()
-	rclpy.spin(node)
-	node.destroy_node()
-	rclpy.shutdown()
+	try: # Exits with any error 
+		rclpy.spin(node)
+	except Exception as e:
+		node.get_logger().error(f"Exception in spin: {e}")
+	finally:
+		node.destroy_node()
+		rclpy.shutdown()
 
 if __name__ == '__main__':
 	main()
