@@ -25,13 +25,13 @@ Functionalities:
 ## Getting Started
 
 ### Prerequisites
-* Python3
 * Intel Realsense SDK and ROS Wrapper for Intel RealSense cameras <br>
   Follow the instructions found here, installing from Linux Debian Installation Guide: https://github.com/IntelRealSense/realsense-ros?tab=readme-ov-file <br>
+  Important: Because we use the Debian installation method, the package is pre-compiled and available system-wide, not as a ROS2 source package in ```~/ros2_ws/src/```. <br>
   At the time of writing, this SDK is not compatible with Noble Numbat 24.04.04 LTS 6.14 kernel (https://github.com/IntelRealSense/librealsense/releases). <br>
   Check your system current kernel and available kernels with: <br>
   ```uname -r && dpkg --list | grep linux-image```
-  Reboot with a compatible kernel: Advanced > 6.08 (non-recovery mode)) <br>
+  Reboot with a compatible kernel: Advanced > 6.08 (non-recovery mode))
   ```bash
   uname -r # Confirm your kernel
   # librealsense2-dkms
@@ -39,31 +39,37 @@ Functionalities:
   sudo dkms build -m librealsense2-dkms -v "$version" -k 6.8.0-41-generic # Selectively build this version of librealsense2-dkms to this kernel
   sudo dkms install -m librealsense2-dkms -v "$version" -k 6.8.0-41-generic # And install
   ```
+  
   The following returns an error as it is not a kernel module and cannot be selectively installed to one compatible kernel. It still successfully installs to the correct kernel though, and shouldn't raise further errors.
   ```bash
   sudo apt install librealsense2-utils
   ```
   
   Note: After this step: ```sudo apt-get install librealsense2-dkms```, the "Configuring Secure Boot" menu may appear. This requires you to set a Machine Owner Key (MOK).
-    
-* OpenCV
+  
+* **Python3.12**
+  ```bash
+  sudo apt install python3.12 python3.12-venv python3.12-dev
+  ```
+  
+* **OpenCV**
   ```bash
   python3 -m venv user_venvs && source user_venvs/bin/activate # Activate the venv
   pip install opencv-python
   ```
   
-* MediaPipe (with the venv still activated)
+* **MediaPipe** (with the venv still activated)
   ```bash
   pip install mediapipe
   ```
   
-* NumPy (with the venv still activated)
-  At the time of writing, the MediaPipe package is not compatible with NumPy more recent than 2. Therefore, ensure a comptable version of NumPy is installed in the venv 1.26.4 
+* **NumPy** (with the venv still activated)
+  <br>At the time of writing, the MediaPipe package is not compatible with NumPy versions more recent than 2.0.0. Therefore, ensure a comptable version of NumPy is installed in the venv 1.26.4 
   ```bash
   pip install 'numpy<2'
   ```
-* Sourcing and Path Configuration (with the venv still activated)
-  Ensure you source ROS after activating the venv to expose the packages
+* **Sourcing and Path Configuration** (with the venv still activated)
+  <br>Ensure you source ROS after activating the venv to expose the packages
   ```bash
   source /opt/ros/jazzy/setup.bash
   source ~/ros2_ws/install/setup.bash
@@ -74,16 +80,22 @@ Functionalities:
   
 ### Installation
 1. Clone this repository into your ROS2 workspace/src directory.
-   ```cd src/ && git clone https://github.com/LAIR-Lab/mp_ros2.git``` 
+   ```bash
+   cd src/ && git clone https://github.com/LAIR-Lab/mp_ros2.git
+   ``` 
 3. Run colcon_build from your ROS2 workspace directory.
+   ```bash
+   cd ~/ros2_ws
+   colcon build
+   ```
 <!-- USAGE EXAMPLES -->
 ## Usage
 From another bash:
-  ```sh
+  ```bash
   source ros2_ws/install/setup.bash
-  ros2 run mp_ros2 hands_detector_rs
+  ros2 launch media_pipe_ros2 mp.launch.py
   ```
-```
+```bash
 cd ~/ros2_ws/
 colcon build # Optional: --packages-select media_pipe_ros2 media_pipe_ros2_msg realsense-ros
 source install/setup.bash
