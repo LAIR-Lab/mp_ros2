@@ -21,6 +21,14 @@ Functionalities:
 - [ ] AutoFlip
 - [ ] MediaSequence
 - [ ] YouTube 8M
+
+## Future Functionalities
+- TBD
+
+## Known Bugs
+- Alignment issues of the landmark and its x and y pixels, especially at greater distances (>1m).
+- Node does not determine difference between foreground and background depths when a shadow occurs. Example, when the hand is in front of the face, the face landmarks are erroneously given the hand's depth and should be given a fallback value within the planar range of the face. 
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
