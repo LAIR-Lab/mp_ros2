@@ -33,7 +33,9 @@ setup(
             'face_mesh_detector_rs = media_pipe_ros2.face_mesh_detector_rs:main',
             'detector = media_pipe_ros2.detector:main',
 
-            'visualization = media_pipe_ros2visualization:main',
+            'visualization = media_pipe_ros2.visualization:main',
+
+            'debug_node = media_pipe_ros2.debug_node:main'
         ],
     },
 )

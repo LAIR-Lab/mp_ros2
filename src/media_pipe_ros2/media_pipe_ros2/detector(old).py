@@ -57,7 +57,11 @@ class HolisticPublisher(Node):
 		# Get actual parameter value from launch file
 		self.camera_ns = self.get_parameter('camera_ns').value
 		self.camera_info_intrinsics_rgb_topic = self.get_parameter('camera_info_intrinsics_rgb_topic').value
-		# self.get_logger().warn(f"DEBUG: {self.camera_info_intrinsics_rgb_topic}") # debug logger to check correct topic is being set
+		self.get_logger().warn(f"DEBUG: {self.camera_info_intrinsics_rgb_topic}") # debug logger to check correct topic is being set
+		self.camera_info_intrinsics_depth_topic = self.get_parameter('camera_info_intrinsics_depth_topic').value
+		# self.get_logger().warn(f"DEBUG: {self.camera_info_intrinsics_depth_topic}") # debug logger to check correct topic is being set
+		self.camera_info_extrinsics_depth_topic = self.get_parameter('camera_info_extrinsics_depth_topic').value
+		# self.get_logger().warn(f"DEBUG: {self.camera_info_extrinsics_depth_topic}") # debug logger to check correct topic is being set
 		self.color_img_topic = self.get_parameter('color_img_topic').value
 		self.depth_img_topic = self.get_parameter('depth_img_topic').value
 		self.pose_on = self.get_parameter('pose_on').value
@@ -90,6 +94,16 @@ class HolisticPublisher(Node):
 			self.camera_info_intrinsics_rgb_callback, 
 			10)
 		# self.get_logger().warn(f"DEBUG: Reaches camera_info_intrinsics_rgb_sub definition") # DL to ensure this line is reached
+		# self.camera_info_intrinsics_depth_sub = self.create_subscription(
+		# 	CameraInfo,
+		# 	self.camera_info_intrinsics_depth_topic,
+		# 	self.camera_info_intrinsics_depth_callback,
+		# 	10)
+		# self.camera_info_extrinsincs_depth_sub = self.create_subscription(
+		# 	CameraInfo, 
+		# 	self.camera_info_extrinsics_depth_topic,
+		# 	self.camera_info_extrinsics_depth_callback, 
+		# 	10)
 		self.color_sub = Subscriber(self, Image, self.color_img_topic)
 		self.depth_sub = Subscriber(self, Image, self.depth_img_topic)
 		self.ts = ApproximateTimeSynchronizer( # Helps with syncing issues. 
@@ -120,12 +134,19 @@ class HolisticPublisher(Node):
 		if not self.camera_info_intrinsics_rgb_ready:
 			self.get_logger().warn("RGB camera intrinsics not yet available. Skipping Frame.")
 			return
+		# if not self.camera_info_intrinsics_depth_ready:
+		# 	self.get_logger().warn("Depth camera intrinsics not yet available. Skipping Frame.")
+		# 	return
+		# if not self.camera_info_extrinsics_depth_ready:
+			self.get_logger().warn("Camera extrinsics not yet available. Skipping Frame.")
+			return
 
 		color_image = self.bridge.imgmsg_to_cv2(color_msg, desired_encoding='bgr8') # converted from rgb8
 		self.depth_image = self.bridge.imgmsg_to_cv2(depth_msg, desired_encoding='passthrough') # same as original, 16UC1
 		color_image = cv2.flip(color_image, 1)  # mirror horizontally for cv
-		self.rgb_height, self.rgb_width, _ = color_image.shape	
-		self.depth_height, self.depth_width = self.depth_image.shape
+		self.rgb_height, self.rgb_width, _ = color_image.shape
+		self.depth_height, self.depth_width, _ = self.depth_image.shape
+		self.get_logger().info(f"RGB")
 
 		image_rgb = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB) # Make a copy in RGB for MediaPipe processing
 		image_rgb.flags.writeable = False
@@ -140,7 +161,8 @@ class HolisticPublisher(Node):
 			if results_face.multi_face_landmarks:
 				for i, lm in enumerate(results_face.multi_face_landmarks[0].landmark):
 					px, py = self.coord_to_px(lm)
-					depth_m = self.get_aligned_depth(px, py, human_face_mesh_list, lm, None, i, lm)
+					
+					# depth_m = self.get_depth(px, py, human_face_mesh_list, lm, None, i, lm, depth_image)
 					X, Y, Z = self.canonical_transform(px, py, depth_m)
 					self.assign_xyz(human_face_mesh_list, None, i, X, Y, Z)
 
@@ -157,7 +179,7 @@ class HolisticPublisher(Node):
 			if results_pose.pose_landmarks:
 				for i, lm in enumerate(results_pose.pose_landmarks.landmark):
 					px, py = self.coord_to_px(lm)
-					depth_m = self.get_aligned_depth(px, py, holistic_msg.human_pose_list, lm, None, i, lm)
+					depth_m = self.get_depth(px, py, holistic_msg.human_pose_list, lm, None, i, lm, depth_image)
 					# self.get_logger().warn(f"depth_m: {depth_m}") # good
 					X, Y, Z = self.canonical_transform(px, py, depth_m)
 					# self.get_logger().warn(f"Z: {Z}") # good
@@ -172,19 +194,19 @@ class HolisticPublisher(Node):
 
 		# Hands
 		if self.hands_on:
-			# self.get_logger().warn("DEBUG")
 			results_hands = self.hands.process(image_rgb)
 			if results_hands.multi_hand_landmarks:
 				for hand_landmarks, handedness in zip(results_hands.multi_hand_landmarks, results_hands.multi_handedness):
 					side = 'right_hand_key_points' if handedness.classification[0].label == "Right" else 'left_hand_key_points'
-					# self.get_logger().warn("DEBUG") # bad 
 					for i, point in enumerate(mp_hands.HandLandmark):
 						lm = hand_landmarks.landmark[point]
-						# self.get_logger().warn(f"i: {i}, point: {point}, lm: {lm}")
 						px, py = self.coord_to_px(lm)
+
+						# depth_m = self.sample_depth(depth_image, px, py, i)
 						depth_m = self.get_aligned_depth(px, py, human_hand, lm, side, i, point)
 						X, Y, Z = self.canonical_transform(px, py, depth_m)
 						self.assign_xyz(human_hand, side, i, X, Y, Z)
+
 					mp_drawing.draw_landmarks(color_image, hand_landmarks, mp_hands.HAND_CONNECTIONS) # keeps untransformed 
 			else:
 				for i, point in enumerate(mp_hands.HandLandmark):
@@ -231,12 +253,61 @@ class HolisticPublisher(Node):
 		self.camera_info_intrinsics_rgb_ready = True
 		# self.get_logger().info(f"RGB camera intrinsics received...")
 	
+	# def camera_info_intrinsics_depth_callback(self, msg: CameraInfo):
+	# 	# .../<color or depth>/camera_info/k
+	# 	# k = [fx,	0, 	cx,
+	# 	# 		0, 	fy,	cy,
+	# 	# 		0,	0,	1]
+	# 	# f: focal length in pixels 
+	# 	# c: principal point aka optical center in pixels
+
+	# 	# DEBUGGING LOGGERS
+	# 	# self.get_logger().warn(f"DEBUG: msg = {msg}") # debug logger for checking msg from intended topic is properly subscribed to 
+	# 	if self.camera_info_intrinsics_depth_ready: return
+	# 	cam_type = "depth"
+	# 	self.get_logger().warn(f"DEBUG: cam_type = {cam_type}")
+	# 	self.camera_info = msg
+	# 	attrs = ['fx', 'fy', 'cx', 'cy']
+	# 	indices = [0, 4, 2, 5] # k-matrix entries
+
+	# 	for attr, idx in zip (attrs, indices):
+	# 		setattr(self, f"{attr}_{cam_type}", self.camera_info.k[idx]) # e.g. fx_depth = k[0]
+	# 		self.get_logger().info(f"{attr}_{cam_type} = {self.camera_info.k[idx]}")
+	# 	self.camera_info_intrinsics_depth_ready = True
+	# 	self.get_logger().info(f"Depth camera intrinsics received...")
+
+	# def camera_info_extrinsics_depth_callback(self, msg: CameraInfo):
+	# 	if camera_info_extrinsics_depth_ready: return
+	# 	cam_type = "depth"
+	# 	self.camera_info = msg
+
+	# 	self.R = self.depth_to_color_extrinsic.rotation 	# extrinsic rotation matrix
+	# 	self.T = self.depth_to_color_extrinsic.translation 	# extrinsic translation vector
+	# 	self.camera_info_extrinsics_depth_ready = True
+	# 	self.get_logger().info(f"Camera extrinsics received...\n\
+	# 		Rotation Matrix R:\n\
+	# 		{self.R}\n\
+	# 		Translation Matrix T:\n\
+	# 		{self.T}")
+
 	def coord_to_px(self, landmark):
-		px = int((1.0 - landmark.x) * self.rgb_width) # flip it back on the horizontal
+		px = int(1.0 - landmark.x * self.rgb_width) # flip it back on the horizontal
 		py = int(landmark.y * self.rgb_height)
 		px = max(0, min(px, self.rgb_width - 1))
 		py = max(0, min(py, self.rgb_height - 1))
 		return px, py
+
+	# def px_to_3dray(self, px_rgb, py_rgb): # get ray direction
+	# 	x_ray = (px_rgb - self.cx) / self.fx
+	# 	y_ray = (py_rgb - self.cy) / self.fy
+	# 	ray_rgb = np.array([x_ray, y_ray, 1.0]) # 1.0 is a placeholder indicating z is somewhere along this parametrized xy line ray
+	# 	ray_rgb /= np.linalg.norm(ray_rgb) # make it unit vector by dividing by norm
+
+	# def rgb_to_depth(self, ray_rgb):
+	# 	point_depth = self.R @ ray_rgb + self.T
+	# 	px_depth = (point_depth[0] / point_depth[2]) * fx_depth + cx_depth
+	# 	py_depth = (point_depth[1] / point_depth[2]) * fy_depth + cy_depth
+	# 	Z = self.depth_image[int(py_depth), int(px_depth)]
 
 	def get_aligned_depth(self, px, py, feature, landmark, hand_side, idx, point): # Convert coordinates to pixel coordinates
 		# Get absolute depths

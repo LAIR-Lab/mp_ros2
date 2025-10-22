@@ -31,7 +31,7 @@ class LandmarkVisualizer(Node):
                 pt.z, 
                 marker_id,
                 frame_id,
-                (0.0, 1.0, 1.0),
+                (0.0, 1.0, 1.0), 
                 'face')) # RGB -> cyan
             marker_id += 1
             
@@ -40,7 +40,7 @@ class LandmarkVisualizer(Node):
             marker_array.markers.append(self.make_marker(
                 pt.x,
                 pt.y,
-                0.0,
+                pt.z,
                 marker_id,
                 frame_id,
                 (1.0, 0.0, 0.0),
@@ -51,14 +51,16 @@ class LandmarkVisualizer(Node):
         for hand_ns, hand in zip(['left_hand', 'right_hand'],
             [msg.human_hand_list.left_hand_key_points,
             msg.human_hand_list.right_hand_key_points]):
-            for pt in hand:
+            for i, pt in enumerate(hand):
+                if i % 4==0: color = (1.0, 1.0, 0.0) # if pt is finger tip change the color
+                else: color = (0.0, 1.0, 0.0)
                 marker_array.markers.append(self.make_marker(
                     pt.x,
                     pt.y,
                     pt.z,
                     marker_id,
                     frame_id,
-                    (0.0, 1.0, 0.0),
+                    color,
                     hand_ns)) # RGB -> green
                 marker_id += 1
 
@@ -77,9 +79,8 @@ class LandmarkVisualizer(Node):
         marker.pose.position.x = x # set marker pos x
         marker.pose.position.y = y 
         marker.pose.position.z = z
-        marker.scale.x = 0.02 # set marker scale in axes
-        marker.scale.y = 0.02
-        marker.scale.z = 0.02
+        scale = 0.005
+        marker.scale.x = marker.scale.y = marker.scale.z = scale # set marker scale in axes
         marker.color.r = color_rgb[0] # set marker color channels
         marker.color.g = color_rgb[1]
         marker.color.b = color_rgb[2]

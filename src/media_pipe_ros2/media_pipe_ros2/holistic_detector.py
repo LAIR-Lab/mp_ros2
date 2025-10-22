@@ -208,7 +208,6 @@ def main(args=None):
     holistic_publisher = HolisticPublisher()
     holistic_publisher.getimage_callback()
     
-    
     cap.release()
     
     rclpy.spin(holistic_publisher)
