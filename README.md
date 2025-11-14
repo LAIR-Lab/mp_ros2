@@ -99,6 +99,8 @@ Functionalities:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+To open a graphical window from inside a container, you must open Ubuntu using Ubuntu on Xorg. To do this, on reboot or sign out, select the user and in the bottom right corner of the screen, click the gear icon and select `Ubuntu on Xorg`. Then proceed.
+
 ```
 source /opt/ros/jazzy/setup.bash # source ROS2
 sudo chown -R ros:ros /mpros2/install /mpros2/build /mpros2/log
