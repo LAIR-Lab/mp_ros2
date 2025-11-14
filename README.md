@@ -100,12 +100,11 @@ Functionalities:
 ## Usage
 
 ```
-source /opt/venv/bin/activate # source virtual environment
 source /opt/ros/jazzy/setup.bash # source ROS2
 sudo chown -R ros:ros /mpros2/install /mpros2/build /mpros2/log
 colcon build --merge-install && source install/setup.bash
 source /mpros2/install/setup.bash # source workspace
-export PS1="\[\e[38;2;13;183;237m\][CONTAINER \u@\h \w] (\$(basename \$VIRTUAL_ENV))\$ \[\e[0m\]" # recolor the container prompt to Docker blue for convenience and ✨aeshetic✨
+export PS1="\[\e[38;2;13;183;237m\][CONTAINER \u@\h \w] \[\e[0m\]" # recolor the container prompt to Docker blue for convenience and ✨aeshetic✨
 ```
 
 From another bash:
