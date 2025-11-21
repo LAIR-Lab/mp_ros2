@@ -1,0 +1,28 @@
+running egg_info
+writing ../../../build/mpros2/mpros2.egg-info/PKG-INFO
+writing dependency_links to ../../../build/mpros2/mpros2.egg-info/dependency_links.txt
+writing entry points to ../../../build/mpros2/mpros2.egg-info/entry_points.txt
+writing requirements to ../../../build/mpros2/mpros2.egg-info/requires.txt
+writing top-level names to ../../../build/mpros2/mpros2.egg-info/top_level.txt
+reading manifest file '../../../build/mpros2/mpros2.egg-info/SOURCES.txt'
+writing manifest file '../../../build/mpros2/mpros2.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../../build/mpros2/mpros2.egg-info to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2-0.0.0-py3.12.egg-info
+running install_scripts
+Installing debug_node script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing face_mesh_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing face_mesh_detector_rs script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing hands_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing hands_detector_rs script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing holistic_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing pose_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing pose_detector_rs script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+Installing visualization script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2
+writing list of installed files to '/home/lairlab-squirtle/mpros2-docker/build/mpros2/install.log'

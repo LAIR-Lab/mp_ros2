@@ -1,0 +1,729 @@
+[0.000000] (-) TimerEvent: {}
+[0.000123] (mpros2) JobQueued: {'identifier': 'mpros2', 'dependencies': OrderedDict()}
+[0.000143] (mpros2_msg) JobQueued: {'identifier': 'mpros2_msg', 'dependencies': OrderedDict()}
+[0.000485] (mpros2) JobStarted: {'identifier': 'mpros2'}
+[0.005163] (mpros2_msg) JobStarted: {'identifier': 'mpros2_msg'}
+[0.099944] (-) TimerEvent: {}
+[0.129766] (mpros2_msg) JobProgress: {'identifier': 'mpros2_msg', 'progress': 'cmake'}
+[0.129808] (mpros2_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/lairlab-squirtle/mpros2-docker/src/src/mpros2_msg', '-DCMAKE_INSTALL_PREFIX=/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg'], 'cwd': '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lairlab-squirtle', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lairlab-squirtle', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lairlab-squirtle/mpros2-docker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2644', 'SYSTEMD_EXEC_PID': '3129', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2306557', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lairlab-squirtle', 'JOURNAL_STREAM': '8:11670', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lairlab-squirtle', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/lairlab-squirtle/anaconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lairlab-squirtle:@/tmp/.ICE-unix/2876,unix/lairlab-squirtle:/tmp/.ICE-unix/2876', 'INVOCATION_ID': 'eba023e7c2ab4d85ab173a59d7a77202', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A0P4C3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/home/lairlab-squirtle/ros2_ws/install/mpros2:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/lairlab-squirtle/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:606219d7-83bc-4f21-9c95-3b1df7018639', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/lairlab-squirtle/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/lairlab-squirtle/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/mpros2/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lairlab-squirtle/ros2_ws/install/mpros2:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit:/opt/ros/jazzy'}), 'shell': False}
+[0.187799] (mpros2_msg) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.200813] (-) TimerEvent: {}
+[0.237996] (mpros2_msg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.253481] (mpros2_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300897] (-) TimerEvent: {}
+[0.329015] (mpros2_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.336410] (mpros2_msg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.338118] (mpros2_msg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.338681] (mpros2_msg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.348841] (mpros2_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.401011] (-) TimerEvent: {}
+[0.435041] (mpros2_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.448075] (mpros2_msg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.448826] (mpros2_msg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.449717] (mpros2_msg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.454374] (mpros2_msg) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.501106] (-) TimerEvent: {}
+[0.585029] (mpros2_msg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.601553] (-) TimerEvent: {}
+[0.610878] (mpros2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/mpros2', 'build', '--build-base', '/home/lairlab-squirtle/mpros2-docker/build/mpros2/build', 'install', '--record', '/home/lairlab-squirtle/mpros2-docker/build/mpros2/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lairlab-squirtle/mpros2-docker/src/src/mpros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lairlab-squirtle', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lairlab-squirtle', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lairlab-squirtle/mpros2-docker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2644', 'SYSTEMD_EXEC_PID': '3129', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2306557', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lairlab-squirtle', 'JOURNAL_STREAM': '8:11670', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lairlab-squirtle', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/lairlab-squirtle/anaconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lairlab-squirtle:@/tmp/.ICE-unix/2876,unix/lairlab-squirtle:/tmp/.ICE-unix/2876', 'INVOCATION_ID': 'eba023e7c2ab4d85ab173a59d7a77202', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A0P4C3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/home/lairlab-squirtle/ros2_ws/install/mpros2:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/lairlab-squirtle/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:606219d7-83bc-4f21-9c95-3b1df7018639', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lairlab-squirtle/mpros2-docker/build/mpros2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/lairlab-squirtle/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/lairlab-squirtle/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lairlab-squirtle/mpros2-docker/build/mpros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/mpros2/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.683317] (mpros2_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.694790] (mpros2_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.701631] (-) TimerEvent: {}
+[0.738183] (mpros2_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.767852] (mpros2_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.778005] (mpros2) StdoutLine: {'line': b'running egg_info\n'}
+[0.778824] (mpros2) StdoutLine: {'line': b'creating ../../../build/mpros2/mpros2.egg-info\n'}
+[0.788450] (mpros2) StdoutLine: {'line': b'writing ../../../build/mpros2/mpros2.egg-info/PKG-INFO\n'}
+[0.789077] (mpros2) StdoutLine: {'line': b'writing dependency_links to ../../../build/mpros2/mpros2.egg-info/dependency_links.txt\n'}
+[0.789294] (mpros2) StdoutLine: {'line': b'writing entry points to ../../../build/mpros2/mpros2.egg-info/entry_points.txt\n'}
+[0.789504] (mpros2) StdoutLine: {'line': b'writing requirements to ../../../build/mpros2/mpros2.egg-info/requires.txt\n'}
+[0.789660] (mpros2) StdoutLine: {'line': b'writing top-level names to ../../../build/mpros2/mpros2.egg-info/top_level.txt\n'}
+[0.789701] (mpros2) StdoutLine: {'line': b"writing manifest file '../../../build/mpros2/mpros2.egg-info/SOURCES.txt'\n"}
+[0.801859] (-) TimerEvent: {}
+[0.812053] (mpros2) StdoutLine: {'line': b"reading manifest file '../../../build/mpros2/mpros2.egg-info/SOURCES.txt'\n"}
+[0.812628] (mpros2) StdoutLine: {'line': b"writing manifest file '../../../build/mpros2/mpros2.egg-info/SOURCES.txt'\n"}
+[0.812915] (mpros2) StdoutLine: {'line': b'running build\n'}
+[0.812964] (mpros2) StdoutLine: {'line': b'running build_py\n'}
+[0.813000] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/build/mpros2/build\n'}
+[0.813825] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib\n'}
+[0.813914] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814314] (mpros2) StdoutLine: {'line': b'copying mpros2/teste.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814353] (mpros2) StdoutLine: {'line': b'copying mpros2/face_mesh_detector.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814384] (mpros2) StdoutLine: {'line': b'copying mpros2/pose_detector.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814414] (mpros2) StdoutLine: {'line': b'copying mpros2/face_mesh_detector_rs.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814444] (mpros2) StdoutLine: {'line': b'copying mpros2/debug_node.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814476] (mpros2) StdoutLine: {'line': b'copying mpros2/holistic_detector.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814506] (mpros2) StdoutLine: {'line': b'copying mpros2/detector.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814536] (mpros2) StdoutLine: {'line': b'copying mpros2/__init__.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814565] (mpros2) StdoutLine: {'line': b'copying mpros2/pose_detector_rs.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814595] (mpros2) StdoutLine: {'line': b'copying mpros2/hands_detector_rs.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814624] (mpros2) StdoutLine: {'line': b'copying mpros2/hands_detector.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814653] (mpros2) StdoutLine: {'line': b'copying mpros2/visualization.py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814682] (mpros2) StdoutLine: {'line': b'copying mpros2/detector(old).py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814711] (mpros2) StdoutLine: {'line': b'copying mpros2/FaceMesh (DO NOT DELETE).py -> /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2\n'}
+[0.814740] (mpros2) StdoutLine: {'line': b'running install\n'}
+[0.817993] (mpros2) StdoutLine: {'line': b'running install_lib\n'}
+[0.827430] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.828850] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/teste.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829161] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/face_mesh_detector.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829491] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/pose_detector.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829531] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/face_mesh_detector_rs.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829565] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/debug_node.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829604] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/holistic_detector.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829634] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/detector.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829664] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/__init__.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829693] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/pose_detector_rs.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.829722] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/hands_detector_rs.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.830261] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/hands_detector.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.830520] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/visualization.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.831006] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/detector(old).py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.831365] (mpros2) StdoutLine: {'line': b'copying /home/lairlab-squirtle/mpros2-docker/build/mpros2/build/lib/mpros2/FaceMesh (DO NOT DELETE).py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2\n'}
+[0.831412] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/teste.py to teste.cpython-312.pyc\n'}
+[0.831493] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/face_mesh_detector.py to face_mesh_detector.cpython-312.pyc\n'}
+[0.831720] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/pose_detector.py to pose_detector.cpython-312.pyc\n'}
+[0.831777] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/face_mesh_detector_rs.py to face_mesh_detector_rs.cpython-312.pyc\n'}
+[0.831969] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/debug_node.py to debug_node.cpython-312.pyc\n'}
+[0.832012] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/holistic_detector.py to holistic_detector.cpython-312.pyc\n'}
+[0.832172] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/detector.py to detector.cpython-312.pyc\n'}
+[0.833467] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/__init__.py to __init__.cpython-312.pyc\n'}
+[0.833619] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/pose_detector_rs.py to pose_detector_rs.cpython-312.pyc\n'}
+[0.834188] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/hands_detector_rs.py to hands_detector_rs.cpython-312.pyc\n'}
+[0.834687] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/hands_detector.py to hands_detector.cpython-312.pyc\n'}
+[0.835275] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/visualization.py to visualization.cpython-312.pyc\n'}
+[0.836012] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/detector(old).py to detector(old).cpython-312.pyc\n'}
+[0.837193] (mpros2) StdoutLine: {'line': b'byte-compiling /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2/FaceMesh (DO NOT DELETE).py to FaceMesh (DO NOT DELETE).cpython-312.pyc\n'}
+[0.837740] (mpros2) StdoutLine: {'line': b'running install_data\n'}
+[0.837797] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/install/mpros2/share/ament_index\n'}
+[0.837902] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/install/mpros2/share/ament_index/resource_index\n'}
+[0.837936] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/install/mpros2/share/ament_index/resource_index/packages\n'}
+[0.837972] (mpros2) StdoutLine: {'line': b'copying resource/mpros2 -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/share/ament_index/resource_index/packages\n'}
+[0.838037] (mpros2) StdoutLine: {'line': b'copying package.xml -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/share/mpros2\n'}
+[0.838070] (mpros2) StdoutLine: {'line': b'creating /home/lairlab-squirtle/mpros2-docker/install/mpros2/share/mpros2/launch\n'}
+[0.838099] (mpros2) StdoutLine: {'line': b'copying launch/mp.launch.py -> /home/lairlab-squirtle/mpros2-docker/install/mpros2/share/mpros2/launch\n'}
+[0.838146] (mpros2) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.849236] (mpros2) StdoutLine: {'line': b'Copying ../../../build/mpros2/mpros2.egg-info to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/python3.12/site-packages/mpros2-0.0.0-py3.12.egg-info\n'}
+[0.849729] (mpros2) StdoutLine: {'line': b'running install_scripts\n'}
+[0.901944] (-) TimerEvent: {}
+[0.922453] (mpros2) StdoutLine: {'line': b'Installing debug_node script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.922847] (mpros2) StdoutLine: {'line': b'Installing detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.922906] (mpros2) StdoutLine: {'line': b'Installing face_mesh_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.922941] (mpros2) StdoutLine: {'line': b'Installing face_mesh_detector_rs script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.922980] (mpros2) StdoutLine: {'line': b'Installing hands_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.923013] (mpros2) StdoutLine: {'line': b'Installing hands_detector_rs script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.923045] (mpros2) StdoutLine: {'line': b'Installing holistic_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.923520] (mpros2) StdoutLine: {'line': b'Installing pose_detector script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.923588] (mpros2) StdoutLine: {'line': b'Installing pose_detector_rs script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.923617] (mpros2) StdoutLine: {'line': b'Installing visualization script to /home/lairlab-squirtle/mpros2-docker/install/mpros2/lib/mpros2\n'}
+[0.923652] (mpros2) StdoutLine: {'line': b"writing list of installed files to '/home/lairlab-squirtle/mpros2-docker/build/mpros2/install.log'\n"}
+[0.946321] (mpros2) CommandEnded: {'returncode': 0}
+[0.956943] (mpros2) JobEnded: {'identifier': 'mpros2', 'rc': 0}
+[1.002026] (-) TimerEvent: {}
+[1.102270] (-) TimerEvent: {}
+[1.202642] (-) TimerEvent: {}
+[1.290232] (mpros2_msg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.303574] (-) TimerEvent: {}
+[1.405773] (-) TimerEvent: {}
+[1.506044] (-) TimerEvent: {}
+[1.606240] (-) TimerEvent: {}
+[1.647304] (mpros2_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.706620] (-) TimerEvent: {}
+[1.807195] (-) TimerEvent: {}
+[1.910086] (-) TimerEvent: {}
+[2.010371] (-) TimerEvent: {}
+[2.110733] (-) TimerEvent: {}
+[2.129884] (mpros2_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.133278] (mpros2_msg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.211167] (-) TimerEvent: {}
+[2.237032] (mpros2_msg) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.311335] (-) TimerEvent: {}
+[2.416013] (-) TimerEvent: {}
+[2.516209] (-) TimerEvent: {}
+[2.616472] (-) TimerEvent: {}
+[2.623167] (mpros2_msg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.660329] (mpros2_msg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.684563] (mpros2_msg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.687296] (mpros2_msg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.687695] (mpros2_msg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.689223] (mpros2_msg) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[2.715925] (mpros2_msg) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.717071] (-) TimerEvent: {}
+[2.722580] (mpros2_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/lairlab-squirtle/mpros2-docker/build/mpros2_msg\n'}
+[2.729205] (mpros2_msg) CommandEnded: {'returncode': 0}
+[2.729922] (mpros2_msg) JobProgress: {'identifier': 'mpros2_msg', 'progress': 'build'}
+[2.729940] (mpros2_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg', '--', '-j20', '-l20'], 'cwd': '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lairlab-squirtle', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lairlab-squirtle', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lairlab-squirtle/mpros2-docker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2644', 'SYSTEMD_EXEC_PID': '3129', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2306557', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lairlab-squirtle', 'JOURNAL_STREAM': '8:11670', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lairlab-squirtle', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/lairlab-squirtle/anaconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lairlab-squirtle:@/tmp/.ICE-unix/2876,unix/lairlab-squirtle:/tmp/.ICE-unix/2876', 'INVOCATION_ID': 'eba023e7c2ab4d85ab173a59d7a77202', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A0P4C3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/home/lairlab-squirtle/ros2_ws/install/mpros2:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/lairlab-squirtle/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:606219d7-83bc-4f21-9c95-3b1df7018639', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/lairlab-squirtle/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/lairlab-squirtle/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/mpros2/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lairlab-squirtle/ros2_ws/install/mpros2:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit:/opt/ros/jazzy'}), 'shell': False}
+[2.771973] (mpros2_msg) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.817436] (-) TimerEvent: {}
+[2.918294] (-) TimerEvent: {}
+[2.956660] (mpros2_msg) StdoutLine: {'line': b'[  1%] Built target mpros2_msg__rosidl_generator_type_description\n'}
+[2.975306] (mpros2_msg) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_mpros2_msg\n'}
+[2.981889] (mpros2_msg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.018685] (-) TimerEvent: {}
+[3.119154] (-) TimerEvent: {}
+[3.219484] (-) TimerEvent: {}
+[3.320449] (-) TimerEvent: {}
+[3.421323] (-) TimerEvent: {}
+[3.521874] (-) TimerEvent: {}
+[3.622575] (-) TimerEvent: {}
+[3.662320] (mpros2_msg) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/hand_point__description.c.o\x1b[0m\n'}
+[3.696131] (mpros2_msg) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/face_mesh_point__type_support.c.o\x1b[0m\n'}
+[3.720000] (mpros2_msg) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__description.c.o\x1b[0m\n'}
+[3.722637] (-) TimerEvent: {}
+[3.754501] (mpros2_msg) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__functions.c.o\x1b[0m\n'}
+[3.793648] (mpros2_msg) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c.o\x1b[0m\n'}
+[3.811583] (mpros2_msg) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__description.c.o\x1b[0m\n'}
+[3.823095] (-) TimerEvent: {}
+[3.851602] (mpros2_msg) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__functions.c.o\x1b[0m\n'}
+[3.887265] (mpros2_msg) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c.o\x1b[0m\n'}
+[3.905848] (mpros2_msg) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/face_mesh_point__functions.c.o\x1b[0m\n'}
+[3.925564] (-) TimerEvent: {}
+[3.955498] (mpros2_msg) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/face_mesh_point__description.c.o\x1b[0m\n'}
+[3.990860] (mpros2_msg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c.o\x1b[0m\n'}
+[4.022845] (mpros2_msg) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__functions.c.o\x1b[0m\n'}
+[4.025663] (-) TimerEvent: {}
+[4.056485] (mpros2_msg) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__description.c.o\x1b[0m\n'}
+[4.088095] (mpros2_msg) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/pose_point__type_support.c.o\x1b[0m\n'}
+[4.118478] (mpros2_msg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/pose_point__functions.c.o\x1b[0m\n'}
+[4.125747] (-) TimerEvent: {}
+[4.152983] (mpros2_msg) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/pose_point__description.c.o\x1b[0m\n'}
+[4.196445] (mpros2_msg) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c.o\x1b[0m\n'}
+[4.220788] (mpros2_msg) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__functions.c.o\x1b[0m\n'}
+[4.226119] (-) TimerEvent: {}
+[4.252822] (mpros2_msg) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__description.c.o\x1b[0m\n'}
+[4.291376] (mpros2_msg) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c.o\x1b[0m\n'}
+[4.315375] (mpros2_msg) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand__functions.c.o\x1b[0m\n'}
+[4.327035] (-) TimerEvent: {}
+[4.351370] (mpros2_msg) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand__description.c.o\x1b[0m\n'}
+[4.377355] (mpros2_msg) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/hand_point__type_support.c.o\x1b[0m\n'}
+[4.396357] (mpros2_msg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/hand_point__functions.c.o\x1b[0m\n'}
+[4.424683] (mpros2_msg) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking C shared library libmpros2_msg__rosidl_generator_c.so\x1b[0m\n'}
+[4.427105] (-) TimerEvent: {}
+[4.457828] (mpros2_msg) StdoutLine: {'line': b'[ 26%] Built target mpros2_msg__rosidl_generator_c\n'}
+[4.527352] (-) TimerEvent: {}
+[4.603423] (mpros2_msg) StdoutLine: {'line': b'running egg_info\n'}
+[4.603920] (mpros2_msg) StdoutLine: {'line': b'creating mpros2_msg.egg-info\n'}
+[4.610925] (mpros2_msg) StdoutLine: {'line': b'writing mpros2_msg.egg-info/PKG-INFO\n'}
+[4.611057] (mpros2_msg) StdoutLine: {'line': b'writing dependency_links to mpros2_msg.egg-info/dependency_links.txt\n'}
+[4.611111] (mpros2_msg) StdoutLine: {'line': b'writing top-level names to mpros2_msg.egg-info/top_level.txt\n'}
+[4.611178] (mpros2_msg) StdoutLine: {'line': b"writing manifest file 'mpros2_msg.egg-info/SOURCES.txt'\n"}
+[4.627426] (-) TimerEvent: {}
+[4.633331] (mpros2_msg) StdoutLine: {'line': b"reading manifest file 'mpros2_msg.egg-info/SOURCES.txt'\n"}
+[4.633468] (mpros2_msg) StdoutLine: {'line': b"writing manifest file 'mpros2_msg.egg-info/SOURCES.txt'\n"}
+[4.650686] (mpros2_msg) StdoutLine: {'line': b'[ 26%] Built target ament_cmake_python_build_mpros2_msg_egg\n'}
+[4.657242] (mpros2_msg) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.727748] (-) TimerEvent: {}
+[4.828175] (-) TimerEvent: {}
+[4.899471] (mpros2_msg) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/hand_point__type_support.cpp.o\x1b[0m\n'}
+[4.927835] (mpros2_msg) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_holistic_list__type_support.cpp.o\x1b[0m\n'}
+[4.928228] (-) TimerEvent: {}
+[4.955351] (mpros2_msg) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_face_mesh_list__type_support.cpp.o\x1b[0m\n'}
+[4.988166] (mpros2_msg) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/face_mesh_point__type_support.cpp.o\x1b[0m\n'}
+[5.015591] (mpros2_msg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_pose_list__type_support.cpp.o\x1b[0m\n'}
+[5.028274] (-) TimerEvent: {}
+[5.044179] (mpros2_msg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/pose_point__type_support.cpp.o\x1b[0m\n'}
+[5.075021] (mpros2_msg) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_hand_list__type_support.cpp.o\x1b[0m\n'}
+[5.100396] (mpros2_msg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_hand__type_support.cpp.o\x1b[0m\n'}
+[5.127263] (mpros2_msg) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.128339] (-) TimerEvent: {}
+[5.156636] (mpros2_msg) StdoutLine: {'line': b'[ 36%] Built target mpros2_msg__rosidl_typesupport_c\n'}
+[5.163960] (mpros2_msg) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.230002] (-) TimerEvent: {}
+[5.332266] (-) TimerEvent: {}
+[5.432685] (-) TimerEvent: {}
+[5.476762] (mpros2_msg) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/hand_point__type_support.c.o\x1b[0m\n'}
+[5.502870] (mpros2_msg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c.o\x1b[0m\n'}
+[5.532164] (mpros2_msg) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c.o\x1b[0m\n'}
+[5.532850] (-) TimerEvent: {}
+[5.567244] (mpros2_msg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/face_mesh_point__type_support.c.o\x1b[0m\n'}
+[5.594418] (mpros2_msg) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c.o\x1b[0m\n'}
+[5.630136] (mpros2_msg) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/pose_point__type_support.c.o\x1b[0m\n'}
+[5.632912] (-) TimerEvent: {}
+[5.663146] (mpros2_msg) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c.o\x1b[0m\n'}
+[5.693210] (mpros2_msg) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c.o\x1b[0m\n'}
+[5.724193] (mpros2_msg) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking C shared library libmpros2_msg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.732997] (-) TimerEvent: {}
+[5.749628] (mpros2_msg) StdoutLine: {'line': b'[ 45%] Built target mpros2_msg__rosidl_typesupport_introspection_c\n'}
+[5.758748] (mpros2_msg) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.834979] (-) TimerEvent: {}
+[5.935172] (-) TimerEvent: {}
+[6.035356] (-) TimerEvent: {}
+[6.095100] (mpros2_msg) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/hand_point__type_support_c.cpp.o\x1b[0m\n'}
+[6.135443] (-) TimerEvent: {}
+[6.235655] (-) TimerEvent: {}
+[6.335875] (-) TimerEvent: {}
+[6.346525] (mpros2_msg) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support_c.cpp.o\x1b[0m\n'}
+[6.436113] (-) TimerEvent: {}
+[6.536560] (-) TimerEvent: {}
+[6.567448] (mpros2_msg) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support_c.cpp.o\x1b[0m\n'}
+[6.636658] (-) TimerEvent: {}
+[6.736945] (-) TimerEvent: {}
+[6.788380] (mpros2_msg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/face_mesh_point__type_support_c.cpp.o\x1b[0m\n'}
+[6.837297] (-) TimerEvent: {}
+[6.938852] (-) TimerEvent: {}
+[7.041110] (-) TimerEvent: {}
+[7.081675] (mpros2_msg) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support_c.cpp.o\x1b[0m\n'}
+[7.141253] (-) TimerEvent: {}
+[7.241616] (-) TimerEvent: {}
+[7.341894] (-) TimerEvent: {}
+[7.346447] (mpros2_msg) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/pose_point__type_support_c.cpp.o\x1b[0m\n'}
+[7.442002] (-) TimerEvent: {}
+[7.542277] (-) TimerEvent: {}
+[7.621734] (mpros2_msg) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support_c.cpp.o\x1b[0m\n'}
+[7.642396] (-) TimerEvent: {}
+[7.744728] (-) TimerEvent: {}
+[7.845046] (-) TimerEvent: {}
+[7.873215] (mpros2_msg) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_hand__type_support_c.cpp.o\x1b[0m\n'}
+[7.945148] (-) TimerEvent: {}
+[8.046118] (-) TimerEvent: {}
+[8.138654] (mpros2_msg) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.146294] (-) TimerEvent: {}
+[8.207384] (mpros2_msg) StdoutLine: {'line': b'[ 55%] Built target mpros2_msg__rosidl_typesupport_fastrtps_c\n'}
+[8.225996] (mpros2_msg) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.246380] (-) TimerEvent: {}
+[8.346902] (-) TimerEvent: {}
+[8.447983] (-) TimerEvent: {}
+[8.548351] (-) TimerEvent: {}
+[8.648590] (-) TimerEvent: {}
+[8.749091] (-) TimerEvent: {}
+[8.758744] (mpros2_msg) StdoutLine: {'line': b'[ 55%] Built target mpros2_msg__cpp\n'}
+[8.769641] (mpros2_msg) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.849199] (-) TimerEvent: {}
+[8.949630] (-) TimerEvent: {}
+[8.983922] (mpros2_msg) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/hand_point__type_support.cpp.o\x1b[0m\n'}
+[9.049739] (-) TimerEvent: {}
+[9.150128] (-) TimerEvent: {}
+[9.156504] (mpros2_msg) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_holistic_list__type_support.cpp.o\x1b[0m\n'}
+[9.250228] (-) TimerEvent: {}
+[9.344579] (mpros2_msg) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_face_mesh_list__type_support.cpp.o\x1b[0m\n'}
+[9.350342] (-) TimerEvent: {}
+[9.450824] (-) TimerEvent: {}
+[9.553369] (-) TimerEvent: {}
+[9.555685] (mpros2_msg) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/face_mesh_point__type_support.cpp.o\x1b[0m\n'}
+[9.653786] (-) TimerEvent: {}
+[9.723016] (mpros2_msg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_pose_list__type_support.cpp.o\x1b[0m\n'}
+[9.754055] (-) TimerEvent: {}
+[9.854512] (-) TimerEvent: {}
+[9.888924] (mpros2_msg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/pose_point__type_support.cpp.o\x1b[0m\n'}
+[9.954596] (-) TimerEvent: {}
+[10.056064] (-) TimerEvent: {}
+[10.056555] (mpros2_msg) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_hand_list__type_support.cpp.o\x1b[0m\n'}
+[10.156163] (-) TimerEvent: {}
+[10.256476] (-) TimerEvent: {}
+[10.269049] (mpros2_msg) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_hand__type_support.cpp.o\x1b[0m\n'}
+[10.357053] (-) TimerEvent: {}
+[10.444641] (mpros2_msg) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.456850] (-) TimerEvent: {}
+[10.479147] (mpros2_msg) StdoutLine: {'line': b'[ 64%] Built target mpros2_msg__rosidl_typesupport_cpp\n'}
+[10.483599] (mpros2_msg) StdoutLine: {'line': b'[ 65%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.556934] (-) TimerEvent: {}
+[10.657171] (-) TimerEvent: {}
+[10.757623] (-) TimerEvent: {}
+[10.802966] (mpros2_msg) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/hand_point__type_support.cpp.o\x1b[0m\n'}
+[10.857725] (-) TimerEvent: {}
+[10.958169] (-) TimerEvent: {}
+[10.997888] (mpros2_msg) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.cpp.o\x1b[0m\n'}
+[11.058535] (-) TimerEvent: {}
+[11.158853] (-) TimerEvent: {}
+[11.195979] (mpros2_msg) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.cpp.o\x1b[0m\n'}
+[11.258960] (-) TimerEvent: {}
+[11.359221] (-) TimerEvent: {}
+[11.430907] (mpros2_msg) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/face_mesh_point__type_support.cpp.o\x1b[0m\n'}
+[11.459317] (-) TimerEvent: {}
+[11.559565] (-) TimerEvent: {}
+[11.607735] (mpros2_msg) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.cpp.o\x1b[0m\n'}
+[11.659981] (-) TimerEvent: {}
+[11.761069] (-) TimerEvent: {}
+[11.786738] (mpros2_msg) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/pose_point__type_support.cpp.o\x1b[0m\n'}
+[11.861168] (-) TimerEvent: {}
+[11.958407] (mpros2_msg) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.cpp.o\x1b[0m\n'}
+[11.961234] (-) TimerEvent: {}
+[12.061498] (-) TimerEvent: {}
+[12.144674] (mpros2_msg) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.cpp.o\x1b[0m\n'}
+[12.161703] (-) TimerEvent: {}
+[12.262208] (-) TimerEvent: {}
+[12.323631] (mpros2_msg) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.362432] (-) TimerEvent: {}
+[12.387490] (mpros2_msg) StdoutLine: {'line': b'[ 74%] Built target mpros2_msg__rosidl_typesupport_introspection_cpp\n'}
+[12.397458] (mpros2_msg) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.462822] (-) TimerEvent: {}
+[12.563569] (-) TimerEvent: {}
+[12.663816] (-) TimerEvent: {}
+[12.764109] (-) TimerEvent: {}
+[12.766036] (mpros2_msg) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/hand_point__type_support.cpp.o\x1b[0m\n'}
+[12.864216] (-) TimerEvent: {}
+[12.964482] (-) TimerEvent: {}
+[13.056983] (mpros2_msg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_holistic_list__type_support.cpp.o\x1b[0m\n'}
+[13.065228] (-) TimerEvent: {}
+[13.165691] (-) TimerEvent: {}
+[13.266004] (-) TimerEvent: {}
+[13.336317] (mpros2_msg) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_face_mesh_list__type_support.cpp.o\x1b[0m\n'}
+[13.366096] (-) TimerEvent: {}
+[13.466636] (-) TimerEvent: {}
+[13.567550] (-) TimerEvent: {}
+[13.598164] (mpros2_msg) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/face_mesh_point__type_support.cpp.o\x1b[0m\n'}
+[13.667916] (-) TimerEvent: {}
+[13.768439] (-) TimerEvent: {}
+[13.855281] (mpros2_msg) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_pose_list__type_support.cpp.o\x1b[0m\n'}
+[13.868522] (-) TimerEvent: {}
+[13.968774] (-) TimerEvent: {}
+[14.069600] (-) TimerEvent: {}
+[14.110680] (mpros2_msg) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/pose_point__type_support.cpp.o\x1b[0m\n'}
+[14.169699] (-) TimerEvent: {}
+[14.270381] (-) TimerEvent: {}
+[14.370647] (-) TimerEvent: {}
+[14.392101] (mpros2_msg) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_hand_list__type_support.cpp.o\x1b[0m\n'}
+[14.470770] (-) TimerEvent: {}
+[14.571251] (-) TimerEvent: {}
+[14.665237] (mpros2_msg) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_hand__type_support.cpp.o\x1b[0m\n'}
+[14.671302] (-) TimerEvent: {}
+[14.771527] (-) TimerEvent: {}
+[14.871923] (-) TimerEvent: {}
+[14.940651] (mpros2_msg) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[14.972612] (-) TimerEvent: {}
+[14.992491] (mpros2_msg) StdoutLine: {'line': b'[ 84%] Built target mpros2_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[15.006060] (mpros2_msg) StdoutLine: {'line': b'[ 84%] Built target mpros2_msg\n'}
+[15.018955] (mpros2_msg) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[15.072740] (-) TimerEvent: {}
+[15.173238] (-) TimerEvent: {}
+[15.273600] (-) TimerEvent: {}
+[15.374069] (-) TimerEvent: {}
+[15.474307] (-) TimerEvent: {}
+[15.552733] (mpros2_msg) StdoutLine: {'line': b'[ 85%] Built target mpros2_msg__py\n'}
+[15.569234] (mpros2_msg) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_hand_point_s.c.o\x1b[0m\n'}
+[15.574605] (-) TimerEvent: {}
+[15.653287] (mpros2_msg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_holistic_list_s.c.o\x1b[0m\n'}
+[15.675193] (-) TimerEvent: {}
+[15.751722] (mpros2_msg) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_face_mesh_list_s.c.o\x1b[0m\n'}
+[15.775370] (-) TimerEvent: {}
+[15.836680] (mpros2_msg) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_face_mesh_point_s.c.o\x1b[0m\n'}
+[15.875954] (-) TimerEvent: {}
+[15.918675] (mpros2_msg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_pose_list_s.c.o\x1b[0m\n'}
+[15.976257] (-) TimerEvent: {}
+[15.999544] (mpros2_msg) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_pose_point_s.c.o\x1b[0m\n'}
+[16.073170] (mpros2_msg) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_hand_list_s.c.o\x1b[0m\n'}
+[16.076320] (-) TimerEvent: {}
+[16.140485] (mpros2_msg) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_hand_s.c.o\x1b[0m\n'}
+[16.176549] (-) TimerEvent: {}
+[16.229080] (mpros2_msg) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library libmpros2_msg__rosidl_generator_py.so\x1b[0m\n'}
+[16.255214] (mpros2_msg) StdoutLine: {'line': b'[ 94%] Built target mpros2_msg__rosidl_generator_py\n'}
+[16.267178] (mpros2_msg) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.276907] (-) TimerEvent: {}
+[16.351782] (mpros2_msg) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[16.374158] (mpros2_msg) StdoutLine: {'line': b'[ 96%] Built target mpros2_msg_s__rosidl_typesupport_fastrtps_c\n'}
+[16.376981] (-) TimerEvent: {}
+[16.389489] (mpros2_msg) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg_s__rosidl_typesupport_c.dir/rosidl_generator_py/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.473177] (mpros2_msg) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.477351] (-) TimerEvent: {}
+[16.500575] (mpros2_msg) StdoutLine: {'line': b'[ 98%] Built target mpros2_msg_s__rosidl_typesupport_c\n'}
+[16.515998] (mpros2_msg) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/mpros2_msg_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.577674] (-) TimerEvent: {}
+[16.605319] (mpros2_msg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.628558] (mpros2_msg) StdoutLine: {'line': b'[100%] Built target mpros2_msg_s__rosidl_typesupport_introspection_c\n'}
+[16.639605] (mpros2_msg) CommandEnded: {'returncode': 0}
+[16.640161] (mpros2_msg) JobProgress: {'identifier': 'mpros2_msg', 'progress': 'install'}
+[16.645750] (mpros2_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg'], 'cwd': '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lairlab-squirtle', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lairlab-squirtle', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lairlab-squirtle/mpros2-docker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2644', 'SYSTEMD_EXEC_PID': '3129', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2306557', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lairlab-squirtle', 'JOURNAL_STREAM': '8:11670', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lairlab-squirtle', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/lairlab-squirtle/anaconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lairlab-squirtle:@/tmp/.ICE-unix/2876,unix/lairlab-squirtle:/tmp/.ICE-unix/2876', 'INVOCATION_ID': 'eba023e7c2ab4d85ab173a59d7a77202', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A0P4C3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/home/lairlab-squirtle/ros2_ws/install/mpros2:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/lairlab-squirtle/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:606219d7-83bc-4f21-9c95-3b1df7018639', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/lairlab-squirtle/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/lairlab-squirtle/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/mpros2/lib/python3.12/site-packages:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/lairlab-squirtle/ros2_ws/install/mpros2_msg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/lairlab-squirtle/ros2_ws/install/mpros2:/home/lairlab-squirtle/ros2_ws/install/shimmer3_gsr_unit:/opt/ros/jazzy'}), 'shell': False}
+[16.651741] (mpros2_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.651951] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/rosidl_interfaces/mpros2_msg\n'}
+[16.652049] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/HandPoint.json\n'}
+[16.652220] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHand.json\n'}
+[16.652314] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHandList.json\n'}
+[16.652413] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/PosePoint.json\n'}
+[16.652614] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanPoseList.json\n'}
+[16.652989] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/FaceMeshPoint.json\n'}
+[16.653046] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanFaceMeshList.json\n'}
+[16.653198] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHolisticList.json\n'}
+[16.653306] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg\n'}
+[16.653540] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg\n'}
+[16.653587] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/hand_point.h\n'}
+[16.653760] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand_list.h\n'}
+[16.653932] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_pose_list.h\n'}
+[16.654211] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.654250] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_face_mesh_list.h\n'}
+[16.654281] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/pose_point.h\n'}
+[16.654324] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_holistic_list.h\n'}
+[16.654460] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail\n'}
+[16.654494] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__functions.h\n'}
+[16.654544] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__struct.h\n'}
+[16.654620] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__functions.c\n'}
+[16.654684] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__functions.h\n'}
+[16.654870] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.c\n'}
+[16.655790] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__functions.c\n'}
+[16.655843] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.h\n'}
+[16.655874] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__functions.h\n'}
+[16.655904] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__description.c\n'}
+[16.655947] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__description.c\n'}
+[16.656059] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__struct.h\n'}
+[16.656099] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__description.c\n'}
+[16.656130] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__functions.h\n'}
+[16.656159] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__description.c\n'}
+[16.656190] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__struct.h\n'}
+[16.656243] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__functions.c\n'}
+[16.656305] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.h\n'}
+[16.656339] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__functions.h\n'}
+[16.656367] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.h\n'}
+[16.656398] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__functions.c\n'}
+[16.656628] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.c\n'}
+[16.656799] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__functions.c\n'}
+[16.656830] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.h\n'}
+[16.656871] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c\n'}
+[16.656943] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__functions.c\n'}
+[16.657176] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__struct.h\n'}
+[16.657234] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__struct.h\n'}
+[16.657265] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__functions.h\n'}
+[16.657297] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__functions.c\n'}
+[16.657326] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.h\n'}
+[16.657355] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__description.c\n'}
+[16.657554] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__struct.h\n'}
+[16.657610] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c\n'}
+[16.657642] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__functions.h\n'}
+[16.657672] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c\n'}
+[16.657715] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.h\n'}
+[16.657744] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c\n'}
+[16.657771] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.h\n'}
+[16.657816] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__struct.h\n'}
+[16.657847] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c\n'}
+[16.657877] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__functions.c\n'}
+[16.657907] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.c\n'}
+[16.657935] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__functions.h\n'}
+[16.658018] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__description.c\n'}
+[16.658076] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__description.c\n'}
+[16.658105] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__struct.h\n'}
+[16.658134] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__description.c\n'}
+[16.658162] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.h\n'}
+[16.658306] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/face_mesh_point.h\n'}
+[16.658337] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand.h\n'}
+[16.658369] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/library_path.sh\n'}
+[16.658413] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/library_path.dsv\n'}
+[16.658493] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_c.so\n'}
+[16.658915] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_c.so" to ""\n'}
+[16.658967] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg\n'}
+[16.659204] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg\n'}
+[16.659235] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail\n'}
+[16.659393] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_fastrtps_c.h\n'}
+[16.659475] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_fastrtps_c.h\n'}
+[16.659511] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_fastrtps_c.h\n'}
+[16.659543] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_fastrtps_c.h\n'}
+[16.659588] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_fastrtps_c.h\n'}
+[16.659788] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_fastrtps_c.h\n'}
+[16.659885] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_fastrtps_c.h\n'}
+[16.660096] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_fastrtps_c.h\n'}
+[16.660133] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.660162] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[16.660506] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.660686] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg\n'}
+[16.660717] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg\n'}
+[16.660795] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.660840] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail\n'}
+[16.660872] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_introspection_c.h\n'}
+[16.661201] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_introspection_c.h\n'}
+[16.661282] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.c\n'}
+[16.661644] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_introspection_c.h\n'}
+[16.661888] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_introspection_c.h\n'}
+[16.661931] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.c\n'}
+[16.661965] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c\n'}
+[16.661996] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c\n'}
+[16.662024] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c\n'}
+[16.662053] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c\n'}
+[16.662084] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_introspection_c.h\n'}
+[16.662115] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_introspection_c.h\n'}
+[16.662144] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c\n'}
+[16.662188] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.c\n'}
+[16.662476] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_introspection_c.h\n'}
+[16.662533] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_introspection_c.h\n'}
+[16.662572] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_c.so\n'}
+[16.662608] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.662644] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_c.so\n'}
+[16.662726] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_c.so" to ""\n'}
+[16.662990] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg\n'}
+[16.663036] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg\n'}
+[16.663220] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/pose_point.hpp\n'}
+[16.663281] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_holistic_list.hpp\n'}
+[16.663313] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand.hpp\n'}
+[16.663345] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/face_mesh_point.hpp\n'}
+[16.663380] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand_list.hpp\n'}
+[16.663410] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[16.663446] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail\n'}
+[16.663552] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__builder.hpp\n'}
+[16.663584] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__struct.hpp\n'}
+[16.663615] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__traits.hpp\n'}
+[16.663645] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__builder.hpp\n'}
+[16.663918] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.hpp\n'}
+[16.664077] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__traits.hpp\n'}
+[16.664143] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__struct.hpp\n'}
+[16.664401] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__builder.hpp\n'}
+[16.664442] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.hpp\n'}
+[16.664483] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.hpp\n'}
+[16.664580] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__struct.hpp\n'}
+[16.664665] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__builder.hpp\n'}
+[16.664741] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.hpp\n'}
+[16.664771] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.hpp\n'}
+[16.664816] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__traits.hpp\n'}
+[16.664859] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__struct.hpp\n'}
+[16.664895] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.hpp\n'}
+[16.664930] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__builder.hpp\n'}
+[16.665019] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__traits.hpp\n'}
+[16.665051] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__struct.hpp\n'}
+[16.665221] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__traits.hpp\n'}
+[16.665332] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__builder.hpp\n'}
+[16.665586] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__struct.hpp\n'}
+[16.665648] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__builder.hpp\n'}
+[16.665686] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__traits.hpp\n'}
+[16.665715] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__builder.hpp\n'}
+[16.665761] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.hpp\n'}
+[16.665939] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.hpp\n'}
+[16.665988] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__struct.hpp\n'}
+[16.666074] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__traits.hpp\n'}
+[16.666167] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__traits.hpp\n'}
+[16.666208] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__struct.hpp\n'}
+[16.666240] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_face_mesh_list.hpp\n'}
+[16.666326] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_pose_list.hpp\n'}
+[16.666357] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/hand_point.hpp\n'}
+[16.666459] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg\n'}
+[16.666542] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg\n'}
+[16.666579] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.666662] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail\n'}
+[16.666698] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666731] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666761] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/dds_fastrtps\n'}
+[16.666792] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666822] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666853] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666887] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666917] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666947] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.666985] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.667015] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.667046] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg\n'}
+[16.667074] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg\n'}
+[16.667103] (mpros2_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail\n'}
+[16.667133] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.667164] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.667194] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.667269] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.cpp\n'}
+[16.667307] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.667431] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.cpp\n'}
+[16.667472] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.cpp\n'}
+[16.667602] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.cpp\n'}
+[16.667699] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.668130] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.cpp\n'}
+[16.668222] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.668256] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.cpp\n'}
+[16.668288] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.cpp\n'}
+[16.668319] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.cpp\n'}
+[16.668365] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.668398] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.668440] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[16.668471] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.668501] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_cpp.so\n'}
+[16.668532] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_cpp.so" to ""\n'}
+[16.668575] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/pythonpath.sh\n'}
+[16.668605] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/pythonpath.dsv\n'}
+[16.668636] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info\n'}
+[16.668665] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[16.668850] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[16.668888] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[16.668918] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[16.668966] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg\n'}
+[16.669020] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so\n'}
+[16.669110] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.669146] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/__init__.py\n'}
+[16.669175] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.669206] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so\n'}
+[16.669249] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so\n'}
+[16.669280] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_c.c\n'}
+[16.669310] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg\n'}
+[16.669341] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_holistic_list_s.c\n'}
+[16.669371] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_pose_point.py\n'}
+[16.669413] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_pose_point_s.c\n'}
+[16.669497] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_face_mesh_list.py\n'}
+[16.669527] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_pose_list.py\n'}
+[16.669580] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_s.c\n'}
+[16.669610] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_list_s.c\n'}
+[16.669644] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand.py\n'}
+[16.669701] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_holistic_list.py\n'}
+[16.669795] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/__init__.py\n'}
+[16.669838] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_hand_point_s.c\n'}
+[16.669890] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_hand_point.py\n'}
+[16.669994] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_pose_list_s.c\n'}
+[16.670049] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_face_mesh_point_s.c\n'}
+[16.670112] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_list.py\n'}
+[16.670144] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_face_mesh_point.py\n'}
+[16.670279] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_face_mesh_list_s.c\n'}
+[16.677735] (-) TimerEvent: {}
+[16.713757] (mpros2_msg) StdoutLine: {'line': b"Listing '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg'...\n"}
+[16.713894] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/__init__.py'...\n"}
+[16.713932] (mpros2_msg) StdoutLine: {'line': b"Listing '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg'...\n"}
+[16.713969] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/__init__.py'...\n"}
+[16.714000] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_face_mesh_point.py'...\n"}
+[16.714037] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_hand_point.py'...\n"}
+[16.714066] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_face_mesh_list.py'...\n"}
+[16.714095] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand.py'...\n"}
+[16.714124] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_list.py'...\n"}
+[16.714153] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_holistic_list.py'...\n"}
+[16.714181] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_pose_list.py'...\n"}
+[16.714210] (mpros2_msg) StdoutLine: {'line': b"Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_pose_point.py'...\n"}
+[16.717996] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so\n'}
+[16.718188] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.718406] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so\n'}
+[16.718933] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.719140] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so\n'}
+[16.719230] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so" to ""\n'}
+[16.719264] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_py.so\n'}
+[16.719526] (mpros2_msg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_py.so" to ""\n'}
+[16.719601] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/HandPoint.idl\n'}
+[16.719789] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHand.idl\n'}
+[16.719894] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHandList.idl\n'}
+[16.719992] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/PosePoint.idl\n'}
+[16.720396] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanPoseList.idl\n'}
+[16.720559] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/FaceMeshPoint.idl\n'}
+[16.720621] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanFaceMeshList.idl\n'}
+[16.720677] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHolisticList.idl\n'}
+[16.720709] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/HandPoint.msg\n'}
+[16.720738] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHand.msg\n'}
+[16.720941] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHandList.msg\n'}
+[16.721091] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/PosePoint.msg\n'}
+[16.721133] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanPoseList.msg\n'}
+[16.721285] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/FaceMeshPoint.msg\n'}
+[16.721321] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanFaceMeshList.msg\n'}
+[16.721350] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHolisticList.msg\n'}
+[16.721403] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/package_run_dependencies/mpros2_msg\n'}
+[16.721501] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/parent_prefix_path/mpros2_msg\n'}
+[16.721610] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/ament_prefix_path.sh\n'}
+[16.721764] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/ament_prefix_path.dsv\n'}
+[16.722012] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/path.sh\n'}
+[16.722063] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/path.dsv\n'}
+[16.722095] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.bash\n'}
+[16.722230] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.sh\n'}
+[16.722285] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.zsh\n'}
+[16.722340] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.dsv\n'}
+[16.722679] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/package.dsv\n'}
+[16.722827] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/packages/mpros2_msg\n'}
+[16.722896] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_cExport.cmake\n'}
+[16.722928] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.722965] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.722999] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[16.723495] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.723532] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[16.723562] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cExport.cmake\n'}
+[16.723593] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[16.723622] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_cppExport.cmake\n'}
+[16.723654] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.723685] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[16.723733] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.723764] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[16.724027] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cppExport.cmake\n'}
+[16.724328] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[16.724367] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_pyExport.cmake\n'}
+[16.724398] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[16.724650] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[16.724925] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.725038] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.725070] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.725101] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.725476] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.725545] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.725652] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msgConfig.cmake\n'}
+[16.725752] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msgConfig-version.cmake\n'}
+[16.725891] (mpros2_msg) StdoutLine: {'line': b'-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/package.xml\n'}
+[16.727689] (mpros2_msg) CommandEnded: {'returncode': 0}
+[16.739773] (mpros2_msg) JobEnded: {'identifier': 'mpros2_msg', 'rc': 0}
+[16.740371] (-) EventReactorShutdown: {}

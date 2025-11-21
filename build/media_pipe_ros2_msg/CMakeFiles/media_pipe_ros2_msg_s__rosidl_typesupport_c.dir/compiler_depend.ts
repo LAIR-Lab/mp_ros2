@@ -1,0 +1,2 @@
+# CMAKE generated file: DO NOT EDIT!
+# Timestamp file for compiler generated dependencies management for media_pipe_ros2_msg_s__rosidl_typesupport_c.

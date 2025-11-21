@@ -1,0 +1,16 @@
+msg/FaceMeshPoint.idl
+msg/FaceMeshPoint.msg
+msg/HandPoint.idl
+msg/HandPoint.msg
+msg/MediaPipeHumanFaceMeshList.idl
+msg/MediaPipeHumanFaceMeshList.msg
+msg/MediaPipeHumanHand.idl
+msg/MediaPipeHumanHand.msg
+msg/MediaPipeHumanHandList.idl
+msg/MediaPipeHumanHandList.msg
+msg/MediaPipeHumanHolisticList.idl
+msg/MediaPipeHumanHolisticList.msg
+msg/MediaPipeHumanPoseList.idl
+msg/MediaPipeHumanPoseList.msg
+msg/PosePoint.idl
+msg/PosePoint.msg

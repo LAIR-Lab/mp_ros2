@@ -1,0 +1,462 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/lairlab-squirtle/mpros2-docker/build/mpros2_msg
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] Built target mpros2_msg__rosidl_generator_type_description
+[  1%] Built target ament_cmake_python_copy_mpros2_msg
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/hand_point__description.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/face_mesh_point__type_support.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__description.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__description.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/face_mesh_point__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/face_mesh_point__description.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__description.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/pose_point__type_support.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/pose_point__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/pose_point__description.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__description.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand__functions.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/media_pipe_human_hand__description.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/hand_point__type_support.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_c.dir/rosidl_generator_c/mpros2_msg/msg/detail/hand_point__functions.c.o[0m
+[ 26%] [32m[1mLinking C shared library libmpros2_msg__rosidl_generator_c.so[0m
+[ 26%] Built target mpros2_msg__rosidl_generator_c
+running egg_info
+creating mpros2_msg.egg-info
+writing mpros2_msg.egg-info/PKG-INFO
+writing dependency_links to mpros2_msg.egg-info/dependency_links.txt
+writing top-level names to mpros2_msg.egg-info/top_level.txt
+writing manifest file 'mpros2_msg.egg-info/SOURCES.txt'
+reading manifest file 'mpros2_msg.egg-info/SOURCES.txt'
+writing manifest file 'mpros2_msg.egg-info/SOURCES.txt'
+[ 26%] Built target ament_cmake_python_build_mpros2_msg_egg
+[ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/hand_point__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_holistic_list__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_face_mesh_list__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/face_mesh_point__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_pose_list__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/pose_point__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_hand_list__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mpros2_msg/msg/media_pipe_human_hand__type_support.cpp.o[0m
+[ 36%] [32m[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_c.so[0m
+[ 36%] Built target mpros2_msg__rosidl_typesupport_c
+[ 36%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 37%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/hand_point__type_support.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c.o[0m
+[ 39%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/face_mesh_point__type_support.c.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/pose_point__type_support.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c.o[0m
+[ 45%] [32m[1mLinking C shared library libmpros2_msg__rosidl_typesupport_introspection_c.so[0m
+[ 45%] Built target mpros2_msg__rosidl_typesupport_introspection_c
+[ 46%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/hand_point__type_support_c.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support_c.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support_c.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/face_mesh_point__type_support_c.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support_c.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/pose_point__type_support_c.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support_c.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mpros2_msg/msg/detail/media_pipe_human_hand__type_support_c.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_fastrtps_c.so[0m
+[ 55%] Built target mpros2_msg__rosidl_typesupport_fastrtps_c
+[ 55%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[ 55%] Built target mpros2_msg__cpp
+[ 56%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/hand_point__type_support.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_holistic_list__type_support.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_face_mesh_list__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/face_mesh_point__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_pose_list__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/pose_point__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_hand_list__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mpros2_msg/msg/media_pipe_human_hand__type_support.cpp.o[0m
+[ 64%] [32m[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_cpp.so[0m
+[ 64%] Built target mpros2_msg__rosidl_typesupport_cpp
+[ 65%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/hand_point__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/face_mesh_point__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/pose_point__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.cpp.o[0m
+[ 74%] [32m[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_introspection_cpp.so[0m
+[ 74%] Built target mpros2_msg__rosidl_typesupport_introspection_cpp
+[ 75%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/hand_point__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_holistic_list__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_face_mesh_list__type_support.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/face_mesh_point__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_pose_list__type_support.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/pose_point__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_hand_list__type_support.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/mpros2_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mpros2_msg/msg/detail/dds_fastrtps/media_pipe_human_hand__type_support.cpp.o[0m
+[ 84%] [32m[1mLinking CXX shared library libmpros2_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 84%] Built target mpros2_msg__rosidl_typesupport_fastrtps_cpp
+[ 84%] Built target mpros2_msg
+[ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 85%] Built target mpros2_msg__py
+[ 86%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_hand_point_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_holistic_list_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_face_mesh_list_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_face_mesh_point_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_pose_list_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_pose_point_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_hand_list_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/mpros2_msg__rosidl_generator_py.dir/rosidl_generator_py/mpros2_msg/msg/_media_pipe_human_hand_s.c.o[0m
+[ 94%] [32m[1mLinking C shared library libmpros2_msg__rosidl_generator_py.so[0m
+[ 94%] Built target mpros2_msg__rosidl_generator_py
+[ 95%] [32mBuilding C object CMakeFiles/mpros2_msg_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 96%] [32m[1mLinking C shared module rosidl_generator_py/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 96%] Built target mpros2_msg_s__rosidl_typesupport_fastrtps_c
+[ 97%] [32mBuilding C object CMakeFiles/mpros2_msg_s__rosidl_typesupport_c.dir/rosidl_generator_py/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[ 98%] [32m[1mLinking C shared module rosidl_generator_py/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so[0m
+[ 98%] Built target mpros2_msg_s__rosidl_typesupport_c
+[ 99%] [32mBuilding C object CMakeFiles/mpros2_msg_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so[0m
+[100%] Built target mpros2_msg_s__rosidl_typesupport_introspection_c
+-- Install configuration: ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/rosidl_interfaces/mpros2_msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/HandPoint.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHand.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHandList.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/PosePoint.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanPoseList.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/FaceMeshPoint.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanFaceMeshList.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHolisticList.json
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/hand_point.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand_list.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_pose_list.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_face_mesh_list.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/pose_point.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_holistic_list.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__functions.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__functions.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__struct.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__description.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/face_mesh_point.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/library_path.sh
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/library_path.dsv
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_introspection_c.h
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/pose_point.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_holistic_list.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/face_mesh_point.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_hand_list.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__builder.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__traits.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__struct.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_face_mesh_list.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/media_pipe_human_pose_list.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/hand_point.hpp
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/dds_fastrtps
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg
+-- Up-to-date: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/pose_point__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_pose_list__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_face_mesh_list__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/hand_point__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_holistic_list__type_support.cpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/face_mesh_point__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/include/mpros2_msg/mpros2_msg/msg/detail/media_pipe_human_hand_list__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/pythonpath.sh
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/pythonpath.dsv
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/top_level.txt
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg-0.0.0-py3.12.egg-info/PKG-INFO
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/__init__.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/_mpros2_msg_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_holistic_list_s.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_pose_point.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_pose_point_s.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_face_mesh_list.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_pose_list.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_s.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_list_s.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_holistic_list.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/__init__.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_hand_point_s.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_hand_point.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_pose_list_s.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_face_mesh_point_s.c
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_list.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_face_mesh_point.py
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_face_mesh_list_s.c
+Listing '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/__init__.py'...
+Listing '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/__init__.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_face_mesh_point.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_hand_point.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_face_mesh_list.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_hand_list.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_holistic_list.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_media_pipe_human_pose_list.py'...
+Compiling '/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/msg/_pose_point.py'...
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/python3.12/site-packages/mpros2_msg/mpros2_msg_s__rosidl_typesupport_c.so" to ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/lib/libmpros2_msg__rosidl_generator_py.so" to ""
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/HandPoint.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHand.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHandList.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/PosePoint.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanPoseList.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/FaceMeshPoint.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanFaceMeshList.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHolisticList.idl
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/HandPoint.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHand.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHandList.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/PosePoint.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanPoseList.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/FaceMeshPoint.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanFaceMeshList.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/msg/MediaPipeHumanHolisticList.msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/package_run_dependencies/mpros2_msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/parent_prefix_path/mpros2_msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/ament_prefix_path.sh
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/ament_prefix_path.dsv
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/path.sh
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/environment/path.dsv
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.bash
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.sh
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.zsh
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/local_setup.dsv
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/package.dsv
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/ament_index/resource_index/packages/mpros2_msg
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_cExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_cppExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msg__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_pyExport.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/export_mpros2_msg__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msgConfig.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/cmake/mpros2_msgConfig-version.cmake
+-- Installing: /home/lairlab-squirtle/mpros2-docker/install/mpros2_msg/share/mpros2_msg/package.xml

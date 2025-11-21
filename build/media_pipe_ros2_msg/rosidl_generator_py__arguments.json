@@ -1,0 +1,38 @@
+{
+  "package_name": "mpros2_msg",
+  "output_dir": "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_generator_py/mpros2_msg",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/HandPoint.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/MediaPipeHumanHand.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/MediaPipeHumanHandList.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/PosePoint.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/MediaPipeHumanPoseList.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/FaceMeshPoint.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/MediaPipeHumanFaceMeshList.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg:msg/MediaPipeHumanHolisticList.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/HandPoint.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/MediaPipeHumanHand.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/MediaPipeHumanHandList.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/PosePoint.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/MediaPipeHumanPoseList.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/FaceMeshPoint.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/MediaPipeHumanFaceMeshList.idl",
+    "/home/lairlab-squirtle/mpros2-docker/build/mpros2_msg/rosidl_adapter/mpros2_msg/msg/MediaPipeHumanHolisticList.idl"
+  ]
+}

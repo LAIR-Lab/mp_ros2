@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "media_pipe_ros2_msg__py",
+		"source" : "/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/media_pipe_ros2_msg__py"
+	}
+}

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from media_pipe_ros2_msg/msg/MediaPipeHumanHand.msg
+// generated code does not contain a copyright notice
+
+#include "media_pipe_ros2_msg/msg/HandPoint.idl"
+
+module media_pipe_ros2_msg {
+  module msg {
+    typedef media_pipe_ros2_msg::msg::HandPoint media_pipe_ros2_msg__msg__HandPoint;
+    typedef media_pipe_ros2_msg__msg__HandPoint media_pipe_ros2_msg__msg__HandPoint__21[21];
+    struct MediaPipeHumanHand {
+      media_pipe_ros2_msg__msg__HandPoint__21 right_hand_key_points;
+
+      media_pipe_ros2_msg__msg__HandPoint__21 left_hand_key_points;
+    };
+  };
+};

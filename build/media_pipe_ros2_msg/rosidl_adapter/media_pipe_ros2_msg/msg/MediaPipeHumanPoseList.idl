@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from media_pipe_ros2_msg/msg/MediaPipeHumanPoseList.msg
+// generated code does not contain a copyright notice
+
+#include "media_pipe_ros2_msg/msg/PosePoint.idl"
+
+module media_pipe_ros2_msg {
+  module msg {
+    typedef media_pipe_ros2_msg::msg::PosePoint media_pipe_ros2_msg__msg__PosePoint;
+    typedef media_pipe_ros2_msg__msg__PosePoint media_pipe_ros2_msg__msg__PosePoint__33[33];
+    struct MediaPipeHumanPoseList {
+      int32 num_humans;
+
+      media_pipe_ros2_msg__msg__PosePoint__33 human_pose_list;
+    };
+  };
+};

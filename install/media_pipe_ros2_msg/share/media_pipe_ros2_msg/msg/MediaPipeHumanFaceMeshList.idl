@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mpros2_msg/msg/MediaPipeHumanFaceMeshList.msg
+// generated code does not contain a copyright notice
+
+#include "mpros2_msg/msg/FaceMeshPoint.idl"
+
+module mpros2_msg {
+  module msg {
+    typedef mpros2_msg::msg::FaceMeshPoint mpros2_msg__msg__FaceMeshPoint;
+    typedef mpros2_msg__msg__FaceMeshPoint mpros2_msg__msg__FaceMeshPoint__468[468];
+    struct MediaPipeHumanFaceMeshList {
+      int32 num_humans;
+
+      mpros2_msg__msg__FaceMeshPoint__468 human_face_mesh_list;
+    };
+  };
+};

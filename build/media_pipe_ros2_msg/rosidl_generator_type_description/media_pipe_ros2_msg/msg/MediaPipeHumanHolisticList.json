@@ -1,0 +1,233 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "mpros2_msg/msg/MediaPipeHumanHolisticList",
+      "fields": [
+        {
+          "name": "num_humans",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "human_hand_list",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "mpros2_msg/msg/MediaPipeHumanHand"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "human_face_mesh_list",
+          "type": {
+            "type_id": 49,
+            "capacity": 468,
+            "string_capacity": 0,
+            "nested_type_name": "mpros2_msg/msg/FaceMeshPoint"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "human_pose_list",
+          "type": {
+            "type_id": 49,
+            "capacity": 33,
+            "string_capacity": 0,
+            "nested_type_name": "mpros2_msg/msg/PosePoint"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "mpros2_msg/msg/FaceMeshPoint",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "mpros2_msg/msg/HandPoint",
+        "fields": [
+          {
+            "name": "name",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "mpros2_msg/msg/MediaPipeHumanHand",
+        "fields": [
+          {
+            "name": "right_hand_key_points",
+            "type": {
+              "type_id": 49,
+              "capacity": 21,
+              "string_capacity": 0,
+              "nested_type_name": "mpros2_msg/msg/HandPoint"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "left_hand_key_points",
+            "type": {
+              "type_id": 49,
+              "capacity": 21,
+              "string_capacity": 0,
+              "nested_type_name": "mpros2_msg/msg/HandPoint"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "mpros2_msg/msg/PosePoint",
+        "fields": [
+          {
+            "name": "name",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "visibility",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "mpros2_msg/msg/MediaPipeHumanHolisticList",
+      "hash_string": "RIHS01_cc5e307cee8de80622426815824372ae250a0d7694c42dfdf3de2b73fd7cd6e2"
+    },
+    {
+      "type_name": "mpros2_msg/msg/FaceMeshPoint",
+      "hash_string": "RIHS01_680c3b604bee344288765076cf30b26f1fa90eaf1badc515f0c0a15f9c75681e"
+    },
+    {
+      "type_name": "mpros2_msg/msg/HandPoint",
+      "hash_string": "RIHS01_536f03bc110f2ea2a5f1113d0f3910f8535e7bda65bdacba54fc0b8cb05203b3"
+    },
+    {
+      "type_name": "mpros2_msg/msg/MediaPipeHumanHand",
+      "hash_string": "RIHS01_c5f8920b8a69c04769839fb2227a8f630c9c31a60acff4661d6b3f8e58afdd2f"
+    },
+    {
+      "type_name": "mpros2_msg/msg/PosePoint",
+      "hash_string": "RIHS01_2aa5015577d04d271482196350251f08959e28173235bc7d79212a789d0174fc"
+    }
+  ]
+}

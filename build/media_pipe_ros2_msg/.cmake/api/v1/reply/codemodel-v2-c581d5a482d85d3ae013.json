@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-01c23afcb5a6066f2bd2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "media_pipe_ros2_msg__py",
+					"jsonFile" : "directory-media_pipe_ros2_msg__py-d05dce1641a232b0e671.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/media_pipe_ros2_msg__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "media_pipe_ros2_msg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_media_pipe_ros2_msg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_media_pipe_ros2_msg_egg-75de60591c8c93ad015f.json",
+					"name" : "ament_cmake_python_build_media_pipe_ros2_msg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_media_pipe_ros2_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_media_pipe_ros2_msg-f64efda230f58b0c7415.json",
+					"name" : "ament_cmake_python_copy_media_pipe_ros2_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg-53223c796eb0e89f3137.json",
+					"name" : "media_pipe_ros2_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__cpp-1e9ef802a8ac4712b5cc.json",
+					"name" : "media_pipe_ros2_msg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "media_pipe_ros2_msg__py::@43c7846621af49182bad",
+					"jsonFile" : "target-media_pipe_ros2_msg__py-4a677f934ec91c3be7a1.json",
+					"name" : "media_pipe_ros2_msg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_generator_c-9d99e283f5afa8de89c2.json",
+					"name" : "media_pipe_ros2_msg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_generator_py-dd181607069806cc2c6b.json",
+					"name" : "media_pipe_ros2_msg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_generator_type_description-d2b83bdcd1a47970a13e.json",
+					"name" : "media_pipe_ros2_msg__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_typesupport_c-137fa7963f710e59ac3c.json",
+					"name" : "media_pipe_ros2_msg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_typesupport_cpp-3d61026c12a04da154e2.json",
+					"name" : "media_pipe_ros2_msg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_typesupport_fastrtps_c-7eb9d99ae09dec1e6217.json",
+					"name" : "media_pipe_ros2_msg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_typesupport_fastrtps_cpp-05a2b95ec208e5542e36.json",
+					"name" : "media_pipe_ros2_msg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_typesupport_introspection_c-14ba6f8e690ffe58ccdd.json",
+					"name" : "media_pipe_ros2_msg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg__rosidl_typesupport_introspection_cpp-3dfcf25702859439446f.json",
+					"name" : "media_pipe_ros2_msg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg_s__rosidl_typesupport_c-5bf5d5efcced52ed11e9.json",
+					"name" : "media_pipe_ros2_msg_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg_s__rosidl_typesupport_fastrtps_c-36bc21a1aa77715eb408.json",
+					"name" : "media_pipe_ros2_msg_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg_s__rosidl_typesupport_introspection_c-f2013f4cc19bcae72028.json",
+					"name" : "media_pipe_ros2_msg_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "media_pipe_ros2_msg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-media_pipe_ros2_msg_uninstall-9a1833230c247ab99bb9.json",
+					"name" : "media_pipe_ros2_msg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-442a92c3b34246898f27.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg",
+		"source" : "/home/lairlab-squirtle/mpros2-docker/src/src/media_pipe_ros2_msg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

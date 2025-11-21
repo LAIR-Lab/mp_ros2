@@ -1,0 +1,33 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/face_mesh_point__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/face_mesh_point__type_support.cpp.o.d"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/hand_point__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/hand_point__type_support.cpp.o.d"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_face_mesh_list__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_face_mesh_list__type_support.cpp.o.d"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_hand__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_hand__type_support.cpp.o.d"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_hand_list__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_hand_list__type_support.cpp.o.d"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_holistic_list__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_holistic_list__type_support.cpp.o.d"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_pose_list__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_pose_list__type_support.cpp.o.d"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/pose_point__type_support.cpp.o"
+  "CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/media_pipe_ros2_msg/msg/pose_point__type_support.cpp.o.d"
+  "libmedia_pipe_ros2_msg__rosidl_typesupport_c.pdb"
+  "libmedia_pipe_ros2_msg__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/face_mesh_point__type_support.cpp"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/hand_point__type_support.cpp"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_face_mesh_list__type_support.cpp"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_hand__type_support.cpp"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_hand_list__type_support.cpp"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_holistic_list__type_support.cpp"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/media_pipe_human_pose_list__type_support.cpp"
+  "rosidl_typesupport_c/media_pipe_ros2_msg/msg/pose_point__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/media_pipe_ros2_msg__rosidl_typesupport_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
