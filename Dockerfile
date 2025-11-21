@@ -20,6 +20,7 @@ RUN apt update && apt install -y --no-install-recommends \
     python3-opencv \
     ffmpeg \
     libgl1-mesa-dri \
+    mesa-utils \
     build-essential \
     cmake \
     make \
