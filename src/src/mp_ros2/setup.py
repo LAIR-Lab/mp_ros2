@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'mpros2'
+package_name = 'mp_ros2'
 
 setup(
     name=package_name,
@@ -23,19 +23,19 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'hands_detector = mpros2.hands_detector:main',
-            'pose_detector = mpros2.pose_detector:main',
-            'face_mesh_detector = mpros2.face_mesh_detector:main',
-            'holistic_detector = mpros2.holistic_detector:main',
+            'hands_detector = mp_ros2.hands_detector:main',
+            'pose_detector = mp_ros2.pose_detector:main',
+            'face_mesh_detector = mp_ros2.face_mesh_detector:main',
+            'holistic_detector = mp_ros2.holistic_detector:main',
 
-            'hands_detector_rs = mpros2.hands_detector_rs:main',
-            'pose_detector_rs = mpros2.pose_detector_rs:main',
-            'face_mesh_detector_rs = mpros2.face_mesh_detector_rs:main',
-            'detector = mpros2.detector:main',
+            'hands_detector_rs = mp_ros2.hands_detector_rs:main',
+            'pose_detector_rs = mp_ros2.pose_detector_rs:main',
+            'face_mesh_detector_rs = mp_ros2.face_mesh_detector_rs:main',
+            'detector = mp_ros2.detector:main',
 
-            'visualization = mpros2.visualization:main',
+            'visualization = mp_ros2.visualization:main',
 
-            'debug_node = mpros2.debug_node:main'
+            'debug_node = mp_ros2.debug_node:main'
         ],
     },
 )

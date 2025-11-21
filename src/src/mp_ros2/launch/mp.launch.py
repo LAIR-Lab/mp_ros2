@@ -99,7 +99,7 @@ def generate_launch_description():
 
 	## MediaPipe
 	holistic_detector_rs = Node(
-		package='mpros2',
+		package='mp_ros2',
 		executable='detector',
 		name='detector',
 		output='screen',
@@ -117,7 +117,7 @@ def generate_launch_description():
 
 	##RViz
 	visualization = Node(
-		package = 'mpros2',
+		package = 'mp_ros2',
 		executable = 'visualization',
 		name = 'mediapipe_visualizer',
 		output = 'screen')

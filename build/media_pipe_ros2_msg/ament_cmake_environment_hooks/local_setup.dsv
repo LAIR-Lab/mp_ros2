@@ -1,4 +1,0 @@
-source;share/media_pipe_ros2_msg/environment/ament_prefix_path.sh
-source;share/media_pipe_ros2_msg/environment/library_path.sh
-source;share/media_pipe_ros2_msg/environment/path.sh
-source;share/media_pipe_ros2_msg/environment/pythonpath.sh

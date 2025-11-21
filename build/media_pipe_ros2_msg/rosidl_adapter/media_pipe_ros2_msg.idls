@@ -1,8 +1,0 @@
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/HandPoint.idl
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/MediaPipeHumanHand.idl
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/MediaPipeHumanHandList.idl
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/PosePoint.idl
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/MediaPipeHumanPoseList.idl
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/FaceMeshPoint.idl
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/MediaPipeHumanFaceMeshList.idl
-/home/lairlab-squirtle/mpros2-docker/build/media_pipe_ros2_msg/rosidl_adapter/media_pipe_ros2_msg:msg/MediaPipeHumanHolisticList.idl
